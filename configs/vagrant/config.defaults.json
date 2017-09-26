@@ -1,0 +1,34 @@
+{
+	"$schema": "file:/F:/Development/Web Development/ReactJS Tutorials/v1/configs/vagrant/schemas/config-defaults.schema.json",
+	"vagrant": {
+		"version": 2,
+		"custom_ssh": false,
+		"host_locale": "en_US.UTF-8"
+	},
+	"servers": {
+		"auth": {
+			"username": "psi",
+			"password": "P@$$w0rd"
+		},
+		"fs_syncs": [
+			{
+				"enabled": false, 
+				"paths": {
+					"guest": ".", 
+					"host": "/vagrant"
+				}
+			}
+		],
+		"hardware": {
+			"cpu_count": 1,
+			"ram_total": 1024
+		},
+		"timezone": "US/Central",
+		"vm": {
+			"image": {
+				"name": "ubuntu/trusty64",
+				"check_for_update": true
+			}
+		}
+	}
+}

@@ -1,0 +1,47 @@
+{
+	"$schema": "file:/F:/Development/Web Development/ReactJS Tutorials/v1/configs/vagrant/schemas/config.schema.json",
+	"servers": [
+		{
+			"hostname": "react-v1-docker-host",
+			"fs_syncs": [
+				{
+					"enabled": true,
+					"paths": {
+						"guest": "./scripts",
+						"host": "/scripts"
+					}
+				},
+				{
+					"enabled": true,
+					"paths": {
+						"guest": "./configs",
+						"host": "/configs"
+					}
+				},
+				{
+					"enabled": true,
+					"paths": {
+						"guest": "./src",
+						"host": "/app"
+					}
+				}
+			],
+			"hardware": {
+				"nic": {
+					"network_type": "private_network",
+					"ip_address": "192.168.100.100",
+					"port_fwds": [
+						{
+							"id": "http",
+							"auto_correct": true,
+							"ports": {
+								"guest": 80,
+								"host": 8080
+							}
+						}
+					]
+				}
+			}
+		}
+	]
+}
