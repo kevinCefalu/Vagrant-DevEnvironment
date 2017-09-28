@@ -1,5 +1,5 @@
 {
-	"$schema": "file:/F:/Development/Web Development/ReactJS Tutorials/v1/configs/vagrant/schemas/config.schema.json",
+	"$schema": "./schemas/config.schema.json",
 	"servers": [
 		{
 			"hostname": "react-v1-docker-host",
@@ -7,22 +7,29 @@
 				{
 					"enabled": true,
 					"paths": {
-						"guest": "./scripts",
-						"host": "/scripts"
+						"host": "./scripts", 
+						"guest": "/scripts" 
 					}
 				},
 				{
 					"enabled": true,
 					"paths": {
-						"guest": "./configs",
-						"host": "/configs"
+						"host": "./configs", 
+						"guest": "/configs" 
 					}
 				},
 				{
 					"enabled": true,
 					"paths": {
-						"guest": "./src",
-						"host": "/app"
+						"host": "./src", 
+						"guest": "/app" 
+					}
+				},
+				{
+					"enabled": true,
+					"paths": {
+						"host": "./logs", 
+						"guest": "/logs" 
 					}
 				}
 			],
@@ -41,7 +48,24 @@
 						}
 					]
 				}
-			}
+			},
+			"scripts": [
+				{
+					"_type": "shell", 
+					"name": "Bootstrapper",
+					"path": "./scripts/shell/_bootstrapper.sh",
+					"args": [
+						{
+							"_type": "json_path",
+							"path": "servers/0/timezone"
+						},
+						{
+							"_type": "value",
+							"value": "/configs/vm/apt_get_packages_list.txt"
+						}
+					]
+				}
+			]
 		}
 	]
 }

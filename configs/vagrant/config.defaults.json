@@ -1,21 +1,23 @@
 {
-	"$schema": "file:/F:/Development/Web Development/ReactJS Tutorials/v1/configs/vagrant/schemas/config-defaults.schema.json",
+	"$schema": "./schemas/config-defaults.schema.json",
 	"vagrant": {
 		"version": 2,
-		"custom_ssh": false,
-		"host_locale": "en_US.UTF-8"
+		"host_locale": "en_US.UTF-8", 
+		"ssh": {
+			"enable_custom_ssh_key": false,
+			"authentication": {
+				"username": "psi",
+				"password": "P@$$w0rd"
+			}
+		}
 	},
 	"servers": {
-		"auth": {
-			"username": "psi",
-			"password": "P@$$w0rd"
-		},
 		"fs_syncs": [
 			{
 				"enabled": false, 
 				"paths": {
-					"guest": ".", 
-					"host": "/vagrant"
+					"host": ".",
+					"guest": "/vagrant"
 				}
 			}
 		],
