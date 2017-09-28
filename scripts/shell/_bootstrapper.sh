@@ -21,11 +21,11 @@ EOA
 mkdir -p /logs/init/_Archive > /dev/null 
 mkdir -p /logs/nginx/_Archive > /dev/null 
 
-# # Archive existing log files in log folder sync
+# Archive existing log files in log folder sync
 . /scripts/shell/archive_logs.sh
 
-# # Bootstrapper to set-up and configure the VM
+# Bootstrapper to set-up and configure the VM
 . /scripts/shell/setup_vm.sh $1 $2
 
-# # Bootstrapper for NGinx Web Server
-. /scripts/shell/setup_nginx.sh
+# Bootstrapper for NGinx Web Server
+# . /scripts/shell/setup_nginx.sh

@@ -23,12 +23,14 @@
 		],
 		"hardware": {
 			"cpu_count": 1,
-			"ram_total": 1024
+			"ram_total": 2048
 		},
 		"timezone": "US/Central",
 		"vm": {
 			"image": {
-				"name": "ubuntu/trusty64",
+				//"name": "ubuntu/trusty64",
+				// "name": "ubuntu/xenial64", 
+				"name": "bento/ubuntu-16.04", 
 				"check_for_update": true
 			}
 		}

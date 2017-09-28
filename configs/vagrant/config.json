@@ -22,7 +22,7 @@
 					"enabled": true,
 					"paths": {
 						"host": "./src", 
-						"guest": "/app" 
+						"guest": "/var/www" 
 					}
 				},
 				{
