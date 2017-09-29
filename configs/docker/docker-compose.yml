@@ -9,5 +9,6 @@ nginx:
     environment:
         - NGINX_HOST=vagrant-test.psibitdev.com
         - NGINX_PORT=80
-    command: /bin/bash -c "envsubst '$$NGINX_HOST $$NGINX_PORT' < /etc/nginx/conf.d/site.template > /etc/nginx/conf.d/default.conf && nginx -g 'daemon off;'"
+    command: /bin/bash -c "envsubst '$$NGINX_HOST $$NGINX_PORT' < 
+      /etc/nginx/conf.d/site.template > /etc/nginx/conf.d/default.conf && nginx -g 'daemon off;'"
     
