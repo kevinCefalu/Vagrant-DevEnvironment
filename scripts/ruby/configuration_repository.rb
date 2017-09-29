@@ -47,7 +47,9 @@ class ConfigurationRepository
 		_merged[Configuration::SERVERS_KEY] = []
 
 		_configs[Configuration::OVERRIDES_KEY][Configuration::SERVERS_KEY].each do |server|
-			_merged[Configuration::SERVERS_KEY].push(_configs[Configuration::DEFAULTS_KEY][Configuration::SERVERS_KEY].mergeConfigurations(server))
+			_merged[Configuration::SERVERS_KEY].push(
+				_configs[Configuration::DEFAULTS_KEY][Configuration::SERVERS_KEY]
+				.mergeConfigurations(server))
 		end # end Merging of Server Configurations
 	
 		return Configuration.new(_configs, _merged)

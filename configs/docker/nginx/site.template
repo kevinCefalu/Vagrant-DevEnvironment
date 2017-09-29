@@ -1,13 +1,14 @@
 
 server {
-	root /var/www;
-
 	server_name ${NGINX_HOST};
 	listen ${NGINX_PORT};
 	
 	access_log /var/log/nginx/access.log;
 	error_log /var/log/nginx/error.log;
 	
-	location / {	
+	location / {
+		root /var/www;	
 	}
+
+	sendfile off;
 }
