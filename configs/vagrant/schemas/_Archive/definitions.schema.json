@@ -1,0 +1,283 @@
+{
+	"$schema": "http://json-schema.org/draft-04/schema#",
+	"id": "http://www.psibitdev.com/schemas/vagrant/definitions.schema.json",
+	"type": "object",
+	"definitions": {
+		"vagrant": {
+			"id": "definitions/vagrant",
+			"title": "Vagrant Configuration",
+			"description": "", 
+			"type": "object",
+			"properties": {
+				"version": {
+					"id": "/definitions/vagrant/properties/version",
+					"title": "Vagrant.configure Version",
+					"description": "All Vagrant configuration is done below. The '2' in Vagrant.configure configures the configuration version (we support older styles for backwards compatibility). Please don't change it unless you know what you're doing.",
+					"type": "integer",
+					"minimum": 1,
+					"maximum": 2,
+					"default": 2
+				},
+				"host_locale": {
+					"id": "/definitions/vagrant/properties/host_locale",
+					"title": "Host Locale Override",
+					"description": "", 
+					"type": "string",
+					"default": "en_US.UTF-8"
+				},
+				"ssh": {
+					"id": "/definitions/vagrant/properties/ssh",
+					"title": "Vagrant SSH Configuration Settings",
+					"description": "",
+					"type": "object",
+					"properties": {	
+						"enable_custom": {
+							"id": "/definitions/vagrant/properties/ssh/properpties/enable_custom", 
+							"title": "Set to true to enable custom SSH authentication",
+							"description": "", 
+							"type": "boolean",
+							"default": false
+						}, 
+						"authentication": {
+							"id": "/definitions/vagrant/properties/ssh/properpties/authentication", 
+							"title": "Custom SSH authentication configuration",
+							"description": "", 
+							"type": "object",
+							"properties": {
+								"username": {
+									"id": "/definitions/vagrant/properties/ssh/properpties/authentication/properties/username", 
+									"title": "Custom SSH authentication username",
+									"description": "", 
+									"type": "string"
+								},
+								"password": {
+									"id": "/definitions/vagrant/properties/ssh/properpties/authentication/properties/password", 
+									"title": "Custom SSH authentication password",
+									"description": "", 
+									"type": "string"
+								}
+							}
+						}
+					}
+				}
+			}
+		},
+		"server": {
+			"id": "definitions/server",
+			"title": "Global Server Configuration",
+			"description": "", 
+			"type": "object",
+			"properties": {
+				"vm": {
+					"id": "definitions/server/properties/vm",
+					"title": "",
+					"description": "", 
+					"type": "object",
+					"properties": {
+						"image": {
+							"id": "definitions/server/properties/vm/properties/image", 
+							"title": "Virtual Machine Image Configuration", 
+							"description": "Virtual Machine Image Configuration", 
+							"type": "object",
+							"properties": {
+								"name": {
+									"id": "definitions/server/properties/vm/properties/image/properties/name",
+									"title": "Server VM Image",
+									"description": "Every Vagrant development environment requires a box. You can search for boxes at https://vagrantcloud.com/search.",
+									"type": "string"
+								},
+								"version": {
+									"id": "definitions/server/properties/vm/properties/image/properties/version",
+									"title": "Server VM Image version number",
+									"description": "Server VM Image version number", 
+									"type": "string"
+								},
+								"url": {
+									"id": "definitions/server/properties/vm/properties/image/properties/url",
+									"title": "Location from which to download the VM Image",
+									"description": "Location from which to download the VM Image", 
+									"type": "string"
+								},
+								"check_for_update": {
+									"id": "definitions/server/properties/vm/properties/image/properties/check_for_update",
+									"title": "Enable Automatic VM Image Updates",
+									"description": "Disable automatic box update checking. If you disable this, then boxes will only be checked for updates when the user runs `vagrant box outdated`. This is not recommended.",
+									"type": "boolean",
+									"default": true
+								}
+							}
+						},
+						"hardware": {
+							"id": "",
+							"title": "",
+							"description": "", 
+							"type": "object",
+							"properties": {
+								"cpu_count": {
+									"id": "",
+									"title": "CPU Count for the VM",
+									"description": "", 
+									"type": "integer",
+									"default": 1
+								},
+								"ram_total": {
+									"id": "",
+									"title": "RAM Total for the VM",
+									"description": "", 
+									"type": "integer",
+									"default": 1024
+								},
+								"nic": {
+									"id": "",
+									"title": "",
+									"description": "", 
+									"type": "object",
+									"properties": {
+										"_type": {
+											"id": "",
+											"title": "Network type; either public or private",
+											"description": "Create a private network, which allows host-only access to the machine using a specific IP Address, or create a public network, which generally matched to bridged network. Bridged networks make the machine appear as another physical device on your network.",
+											"type": "string",
+											"enum": [
+												"private_network",
+												"public_network"
+											]
+										},
+										"ip": {
+											"id": "",
+											"title": "",
+											"description": "Host-only access to the machine using this specific IP Address.",
+											"type": "string"
+										},
+										"port_fwds": {
+											"id": "",
+											"title": "Port Forwarding for VM network",
+											"description": "Create a forwarded port mapping which allows access to a specific port within the machine from a port on the host machine. In the example below, accessing 'localhost:8080' will access port 80 on the guest machine. NOTE: This will enable public access to the opened port",
+											"type": "array",
+											"items": {
+												"id": "",
+												"title": "",
+												"description": "", 
+												"type": "object",
+												"properties": {
+													"id": {
+														"id": "",
+														"title": "",
+														"description": "", 
+														"type": "string"
+													},
+													"auto_correct": {
+														"id": "",
+														"title": "",
+														"description": "", 
+														"type": "boolean",
+														"default": true
+													},
+													"from_host_ip": {
+														"id": "",
+														"title": "Public Access Host IP Address",
+														"description": "Create a forwarded port mapping which allows access to a specific port within the machine from a port on the host machine and only allow access via 127.0.0.1 to disable public access",
+														"type": [
+															"null",
+															"string"
+														]
+													},
+													"ports": {
+														"id": "",
+														"title": "",
+														"description": "", 
+														"type": "object",
+														"properties": {
+															"guest": {
+																"id": "",
+																"title": "Guest Port forwarded to host port",
+																"description": "", 
+																"type": "integer"
+															},
+															"host": {
+																"id": "",
+																"title": "Host Port to access forwarded guest port",
+																"description": "", 
+																"type": "integer"
+															}
+														}
+													}
+												}
+											}
+										}
+									}
+								}
+							}
+						}
+					}
+				},
+				"timezone": {
+					"id": "definitions/server/properties/timezone",
+					"title": "Server Time Zone", 
+					"description": "Server Time Zone", 
+					"type": "string",
+					"default": "US/Central"
+				},
+				"auth": {
+					"type": "object",
+					"properties": {
+						"username": {
+							"id": "",
+							"title": "",
+							"description": "", 
+							"type": "string"
+						},
+						"password": {
+							"id": "",
+							"title": "",
+							"description": "", 
+							"type": "string"
+						}
+					}
+				},
+				"fs_syncs": {
+					"id": "",
+					"title": "",
+					"description": "Share an additional folder to the guest VM. The first argument is the path on the host to the actual folder. The second argument is the path on the guest to mount the folder. And the optional third argument is a set of non-required options.",
+					"type": "array",
+					"items": {
+						"type": "object",
+						"properties": {
+							"enabled": {
+								"id": "",
+								"title": "Enable this Folder Sync",
+								"description": "", 
+								"type": "boolean",
+								"default": true
+							},
+							// "mount_options": {
+							// 	"type": "string",
+							// 	"default": "rw,bg,hard,nolocks,intr,sync"
+							// }, 
+							"paths": {
+								"id": "",
+								"title": "",
+								"description": "", 
+								"type": "object",
+								"properties": {
+									"host": {
+										"id": "",
+										"title": "Path on the host to the actual folder",
+										"description": "", 
+										"type": "string"
+									},
+									"guest": {
+										"id": "",
+										"title": "Path on the guest to mount the folder",
+										"description": "", 
+										"type": "string"
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}

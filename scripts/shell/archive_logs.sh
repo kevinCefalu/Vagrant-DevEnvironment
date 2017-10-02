@@ -15,8 +15,8 @@
 # 2017-09-25	KCefalu			Initial creation of Archiving script & documentation
 ####################################################################################################
 
-. /scripts/shell/includes/timestamp_functions.sh
-. /scripts/shell/includes/logger_functions.sh
+. /scripts/includes/timestamp_functions.sh
+. /scripts/includes/logger_functions.sh
 
 original_dir=$PWD
 

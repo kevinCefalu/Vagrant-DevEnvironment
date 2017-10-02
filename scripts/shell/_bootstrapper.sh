@@ -33,7 +33,7 @@ mkdir -p /logs/init/_Archive > /dev/null
 mkdir -p /logs/nginx/_Archive > /dev/null 
 
 # Archive existing log files in log folder sync
-. /scripts/shell/archive_logs.sh
+. /scripts/archive_logs.sh
 
 # Bootstrapper to set-up and configure the VM
-. /scripts/shell/setup_vm.sh $1 $2
+. /scripts/setup_vm.sh $1 $2

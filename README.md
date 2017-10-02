@@ -25,9 +25,10 @@ Use the following instructions to set-up, and run the VagrantFile
 
 ## Configuration
 
+
 ## Change Log
 
-- 0.0.1 - 2017-10-02 - Initial Commit
+- 0.1.0 - 2017-10-02 - Initial Commit
     - Added Files
         - configs/
             - docker/

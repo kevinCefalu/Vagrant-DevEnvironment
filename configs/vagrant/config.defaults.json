@@ -1,36 +1,37 @@
 {
-	"$schema": "./schemas/config-defaults.schema.json",
 	"vagrant": {
 		"version": 2,
 		"host_locale": "en_US.UTF-8", 
 		"ssh": {
-			"enable_custom": false,
-			"authentication": {
-				"username": "psi",
-				"password": "P@$$w0rd"
-			}
+			"enable_custom": false
 		}
 	},
 	"servers": {
+		"vm": {
+			"image": {
+				"name": "bento/ubuntu-16.04", 
+				"check_for_update": true
+			},
+			"hardware": {
+				"cpu_count": 1,
+				"ram_total": 2048,
+				"nic": {
+					"_type": "private_network",
+					"name": "Default",
+					"enabled": true
+				}
+			},
+			"timezone": "US/Central"
+		}, 
 		"fs_syncs": [
 			{
+				"name": "Vagrant (Default)",
 				"enabled": false, 
 				"paths": {
 					"host": ".",
 					"guest": "/vagrant"
 				}
 			}
-		],
-		"hardware": {
-			"cpu_count": 1,
-			"ram_total": 2048
-		},
-		"timezone": "US/Central",
-		"vm": {
-			"image": {
-				"name": "bento/ubuntu-16.04", 
-				"check_for_update": true
-			}
-		}
+		]
 	}
 }

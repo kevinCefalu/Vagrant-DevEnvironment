@@ -25,7 +25,7 @@ Vagrant.configure(configRepo.ForVagrant['version']) do |v_config|
 
 		if svr_inst["enabled"]
 
-			hostName = svr_inst["hostname"]
+			hostName = svr_inst["name"]
 
 			# Begin configuring the virtual machine Definition
 			v_config.vm.define hostName do |svr_def|
@@ -37,14 +37,14 @@ Vagrant.configure(configRepo.ForVagrant['version']) do |v_config|
 				# End configuring the virtual machine's box image definition
 
 				# Begin configuring the virtual machine's network definition
-				svr_def.vm.network configRepo.GetValueFrom(svr_inst, "hardware/nic/_type"), 
-					ip: configRepo.GetValueFrom(svr_inst, "hardware/nic/ip")
+				svr_def.vm.network configRepo.GetValueFrom(svr_inst, "vm/hardware/nic/_type"), 
+					ip: configRepo.GetValueFrom(svr_inst, "vm/hardware/nic/ip")
 
 				# Begin configuring the virtual machine's port forward definitions
-				configRepo.GetValueFrom(svr_inst, "hardware/nic/port_fwds").each do |pf_inst|
+				configRepo.GetValueFrom(svr_inst, "vm/hardware/nic/port_fwds").each do |pf_inst|
 					
 					svr_def.vm.network :forwarded_port, 
-						id: configRepo.GetValueFrom(pf_inst, "id"), 
+						id: configRepo.GetValueFrom(pf_inst, "name"), 
 						auto_correct: configRepo.GetValueFrom(pf_inst, "auto_correct"), 
 						guest: configRepo.GetValueFrom(pf_inst, "ports/guest"), 
 						host: configRepo.GetValueFrom(pf_inst, "ports/host") 
@@ -57,8 +57,8 @@ Vagrant.configure(configRepo.ForVagrant['version']) do |v_config|
 				svr_def.vm.provider :virtualbox do |vb_def|
 
 					vb_def.name = hostName
-					vb_def.cpus = configRepo.GetValueFrom(svr_inst, "hardware/cpu_count")
-					vb_def.memory = configRepo.GetValueFrom(svr_inst, "hardware/ram_total")
+					vb_def.cpus = configRepo.GetValueFrom(svr_inst, "vm/hardware/cpu_count")
+					vb_def.memory = configRepo.GetValueFrom(svr_inst, "vm/hardware/ram_total")
 					# Important to fix an issue with ubuntu 16.x's SSH connection
 					vb_def.customize ["modifyvm", :id, "--cableconnected1", "on"]
 
@@ -68,7 +68,8 @@ Vagrant.configure(configRepo.ForVagrant['version']) do |v_config|
 				# Begin configuring the virtual machine Folder Syncs
 				configRepo.GetValueFrom(svr_inst, "fs_syncs").each do |fs_inst|
 
-					svr_def.vm.synced_folder configRepo.GetValueFrom(fs_inst, "paths/host"), configRepo.GetValueFrom(fs_inst, "paths/guest"), 
+					svr_def.vm.synced_folder configRepo.GetValueFrom(fs_inst, "paths/host"), 
+						configRepo.GetValueFrom(fs_inst, "paths/guest"), 
 						disabled: !configRepo.GetValueFrom(fs_inst, "enabled") 
 
 				end # fs_inst.each
@@ -82,10 +83,11 @@ Vagrant.configure(configRepo.ForVagrant['version']) do |v_config|
 						script_definition.path = configRepo.GetValueFrom(scr_inst, "path")
 						script_definition.args = []
 
-						# Build the script definition's array of arguments
+						# Begin building the script definition's array of arguments
 						configRepo.GetValueFrom(scr_inst, "args").each do |arg_inst|
 							script_definition.args.push(configRepo.GetScriptArgument(arg_inst))
 						end # End arg_inst.each
+						# End building the script definition's array of arguments
 
 					end # End script_definition
 				end # End scr_inst.each

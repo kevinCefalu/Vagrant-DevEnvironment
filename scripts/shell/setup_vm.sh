@@ -13,7 +13,7 @@
 # 2017-09-25	KCefalu			Initial creation of linux init script & documentation
 ####################################################################################################
 
-. /scripts/shell/includes/logger_functions.sh
+. /scripts/includes/logger_functions.sh
 
 log_file="/logs/init/setup_vm.log" 
 

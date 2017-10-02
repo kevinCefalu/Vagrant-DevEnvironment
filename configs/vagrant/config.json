@@ -1,18 +1,38 @@
 {
-	"$schema": "./schemas/config.schema.json",
 	"servers": [
 		{
+			"name": "docker-host",
 			"enabled": true, 
-			"hostname": "react-v1-docker-host",
+			"vm": {
+				"hardware": {
+					"nic": {
+						"name": "Vagrant (Default)",
+						"ip": "192.168.100.100",
+						"port_fwds": [
+							{
+								"name": "http",
+								"enabled": true,
+								"auto_correct": true,
+								"ports": {
+									"guest": 80,
+									"host": 8080
+								}
+							}
+						]
+					}
+				}
+			}, 
 			"fs_syncs": [
 				{
+					"name": "Provisioner Scripts",
 					"enabled": true,
 					"paths": {
-						"host": "./scripts", 
+						"host": "./scripts/shell", 
 						"guest": "/scripts" 
 					}
 				},
 				{
+					"name": "Configs",
 					"enabled": true,
 					"paths": {
 						"host": "./configs", 
@@ -20,6 +40,7 @@
 					}
 				},
 				{
+					"name": "App Source",
 					"enabled": true,
 					"paths": {
 						"host": "./src", 
@@ -27,6 +48,7 @@
 					}
 				},
 				{
+					"name": "Logs",
 					"enabled": true,
 					"paths": {
 						"host": "./logs", 
@@ -34,33 +56,22 @@
 					}
 				}
 			],
-			"hardware": {
-				"nic": {
-					"_type": "private_network",
-					"ip": "192.168.100.100",
-					"port_fwds": [
-						{
-							"id": "http",
-							"auto_correct": true,
-							"ports": {
-								"guest": 80,
-								"host": 8080
-							}
-						}
-					]
-				}
-			},
 			"scripts": [
 				{
-					"_type": "shell", 
 					"name": "Bootstrapper",
+					"enabled": true, 
+					"_type": "shell", 
 					"path": "./scripts/shell/_bootstrapper.sh",
 					"args": [
 						{
+							"name": "timestamp", 
+							"enabled": true, 
 							"_type": "json_path",
-							"path": "servers/0/timezone"
+							"path": "servers/0/vm/timezone"
 						},
 						{
+							"name": "Linux Packages", 
+							"enabled": true, 
 							"_type": "value",
 							"value": "/configs/vm/apt_get_packages_list.txt"
 						}
