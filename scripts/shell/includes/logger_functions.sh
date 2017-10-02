@@ -1,6 +1,8 @@
 #!/bin/bash
 # Logger Helper Functions script
 
+. timestamp_functions.sh
+
 # Logger Helper Functions
 log_message() 
 { 

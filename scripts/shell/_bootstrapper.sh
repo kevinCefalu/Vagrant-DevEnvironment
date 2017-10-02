@@ -26,6 +26,3 @@ mkdir -p /logs/nginx/_Archive > /dev/null
 
 # Bootstrapper to set-up and configure the VM
 . /scripts/shell/setup_vm.sh $1 $2
-
-# Bootstrapper for NGinx Web Server
-# . /scripts/shell/setup_nginx.sh

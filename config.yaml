@@ -1,0 +1,61 @@
+--- 
+settings: 
+    vagrant: 
+        version: 2 
+        insert_SSH_Key: false 
+
+machines: 
+    global: 
+        vm_img: 'ubuntu/trusty64' 
+        check_update: true 
+        time_zone: 'US/Central'
+        auth: 
+            username: 'psi' 
+            password: 'P@$$w0rd' 
+        hardware: 
+            cpu_count: '1' 
+            ram_total: '1024' 
+            # nfs:
+            #     mount_on_up: true 
+            #     directory_name: 'working' 
+            #     host_mount_options: "rw,bg,hard,nolocks,intr,sync" 
+            nic: 
+                type: 'private_network' 
+        # ui:
+        #     enabled: true 
+        #     vram: 128
+        #     accelerate_3d: on 
+        #     clipboard: bidirectional 
+        #     draganddrop: hosttoguest 
+
+    definitions: 
+        -   name: 'react-docker-host' 
+            hardware: 
+                nic: 
+                    ip: '192.168.100.100'
+                    forwarded_ports:
+                    - 
+                        id: "http"
+                        auto_correct: true
+                        guest: 80
+                        host: 8080
+            app_syncs:
+                # Vagrant Sync
+                - 
+                    disabled: true
+                    host_path: '.'
+                    guest_path: '/vagrant'
+
+                - 
+                    disabled: false
+                    host_path: './provision/scripts'
+                    guest_path: '/srv_scripts'
+                - 
+                    disabled: false
+                    host_path: './provision/configs'
+                    guest_path: '/srv_configs'
+                # Source Sync
+                - 
+                    disabled: false
+                    host_path: './src'
+                    guest_path: '/app'

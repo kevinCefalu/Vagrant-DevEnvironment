@@ -2,6 +2,7 @@
 	"$schema": "./schemas/config.schema.json",
 	"servers": [
 		{
+			"enabled": true, 
 			"hostname": "react-v1-docker-host",
 			"fs_syncs": [
 				{
@@ -35,8 +36,8 @@
 			],
 			"hardware": {
 				"nic": {
-					"network_type": "private_network",
-					"ip_address": "192.168.100.100",
+					"_type": "private_network",
+					"ip": "192.168.100.100",
 					"port_fwds": [
 						{
 							"id": "http",
@@ -65,7 +66,12 @@
 						}
 					]
 				}
-			]
+			],
+			"docker": {
+				"enabled": true, 
+				"run": "always",
+				"compose_file": "/configs/docker/docker-compose.yml"
+			}
 		}
 	]
 }

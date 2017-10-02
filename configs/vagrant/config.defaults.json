@@ -4,7 +4,7 @@
 		"version": 2,
 		"host_locale": "en_US.UTF-8", 
 		"ssh": {
-			"enable_custom_ssh_key": false,
+			"enable_custom": false,
 			"authentication": {
 				"username": "psi",
 				"password": "P@$$w0rd"
@@ -28,8 +28,6 @@
 		"timezone": "US/Central",
 		"vm": {
 			"image": {
-				//"name": "ubuntu/trusty64",
-				// "name": "ubuntu/xenial64", 
 				"name": "bento/ubuntu-16.04", 
 				"check_for_update": true
 			}
