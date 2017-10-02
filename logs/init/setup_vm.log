@@ -1,0 +1,543 @@
+20171001@22:00:41 ==> Setting VM TimeZone: US/Central
+20171001@17:00:41 ==> Updating packages
+20171001@17:00:42 ==> Ign:1 http://security.ubuntu.com/ubuntu xenial-security InRelease
+20171001@17:00:42 ==> Ign:2 http://security.ubuntu.com/ubuntu xenial-security Release
+20171001@17:00:42 ==> Ign:3 http://archive.ubuntu.com/ubuntu xenial InRelease
+20171001@17:00:42 ==> Ign:4 http://security.ubuntu.com/ubuntu xenial-security/main amd64 Packages.diff/Index
+20171001@17:00:42 ==> Ign:5 http://archive.ubuntu.com/ubuntu xenial-updates InRelease
+20171001@17:00:42 ==> Ign:6 http://security.ubuntu.com/ubuntu xenial-security/main i386 Packages.diff/Index
+20171001@17:00:42 ==> Ign:7 http://archive.ubuntu.com/ubuntu xenial-backports InRelease
+20171001@17:00:42 ==> Ign:8 http://archive.ubuntu.com/ubuntu xenial Release
+20171001@17:00:42 ==> Ign:9 http://security.ubuntu.com/ubuntu xenial-security/main all Packages
+20171001@17:00:42 ==> Ign:10 http://archive.ubuntu.com/ubuntu xenial-updates Release
+20171001@17:00:42 ==> Ign:11 http://security.ubuntu.com/ubuntu xenial-security/main Translation-en_US
+20171001@17:00:42 ==> Ign:12 http://archive.ubuntu.com/ubuntu xenial-backports Release
+20171001@17:00:42 ==> Ign:13 http://security.ubuntu.com/ubuntu xenial-security/main Translation-en.diff/Index
+20171001@17:00:42 ==> Ign:14 http://archive.ubuntu.com/ubuntu xenial/main amd64 Packages.diff/Index
+20171001@17:00:42 ==> Ign:15 http://security.ubuntu.com/ubuntu xenial-security/restricted amd64 Packages.diff/Index
+20171001@17:00:42 ==> Ign:16 http://security.ubuntu.com/ubuntu xenial-security/restricted i386 Packages.diff/Index
+20171001@17:00:42 ==> Ign:17 http://archive.ubuntu.com/ubuntu xenial/main i386 Packages.diff/Index
+20171001@17:00:42 ==> Ign:18 http://security.ubuntu.com/ubuntu xenial-security/restricted all Packages
+20171001@17:00:42 ==> Ign:19 http://archive.ubuntu.com/ubuntu xenial/main all Packages
+20171001@17:00:42 ==> Ign:20 http://security.ubuntu.com/ubuntu xenial-security/restricted Translation-en_US
+20171001@17:00:43 ==> Ign:21 http://archive.ubuntu.com/ubuntu xenial/main Translation-en_US
+20171001@17:00:43 ==> Ign:22 http://security.ubuntu.com/ubuntu xenial-security/restricted Translation-en.diff/Index
+20171001@17:00:43 ==> Ign:23 http://archive.ubuntu.com/ubuntu xenial/main Translation-en.diff/Index
+20171001@17:00:43 ==> Ign:24 http://security.ubuntu.com/ubuntu xenial-security/universe amd64 Packages.diff/Index
+20171001@17:00:43 ==> Ign:25 http://archive.ubuntu.com/ubuntu xenial/restricted amd64 Packages.diff/Index
+20171001@17:00:43 ==> Ign:26 http://archive.ubuntu.com/ubuntu xenial/restricted i386 Packages.diff/Index
+20171001@17:00:43 ==> Ign:27 http://security.ubuntu.com/ubuntu xenial-security/universe i386 Packages.diff/Index
+20171001@17:00:43 ==> Ign:28 http://archive.ubuntu.com/ubuntu xenial/restricted all Packages
+20171001@17:00:43 ==> Ign:29 http://security.ubuntu.com/ubuntu xenial-security/universe all Packages
+20171001@17:00:43 ==> Ign:30 http://archive.ubuntu.com/ubuntu xenial/restricted Translation-en_US
+20171001@17:00:43 ==> Ign:31 http://security.ubuntu.com/ubuntu xenial-security/universe Translation-en_US
+20171001@17:00:43 ==> Ign:32 http://archive.ubuntu.com/ubuntu xenial/restricted Translation-en.diff/Index
+20171001@17:00:43 ==> Ign:33 http://security.ubuntu.com/ubuntu xenial-security/universe Translation-en.diff/Index
+20171001@17:00:43 ==> Ign:34 http://archive.ubuntu.com/ubuntu xenial/universe amd64 Packages.diff/Index
+20171001@17:00:43 ==> Ign:35 http://security.ubuntu.com/ubuntu xenial-security/multiverse amd64 Packages.diff/Index
+20171001@17:00:43 ==> Ign:36 http://archive.ubuntu.com/ubuntu xenial/universe i386 Packages.diff/Index
+20171001@17:00:43 ==> Ign:37 http://security.ubuntu.com/ubuntu xenial-security/multiverse i386 Packages.diff/Index
+20171001@17:00:43 ==> Ign:38 http://archive.ubuntu.com/ubuntu xenial/universe all Packages
+20171001@17:00:43 ==> Ign:39 http://security.ubuntu.com/ubuntu xenial-security/multiverse all Packages
+20171001@17:00:43 ==> Ign:40 http://archive.ubuntu.com/ubuntu xenial/universe Translation-en_US
+20171001@17:00:43 ==> Ign:41 http://security.ubuntu.com/ubuntu xenial-security/multiverse Translation-en_US
+20171001@17:00:43 ==> Ign:42 http://archive.ubuntu.com/ubuntu xenial/universe Translation-en.diff/Index
+20171001@17:00:43 ==> Ign:43 http://security.ubuntu.com/ubuntu xenial-security/multiverse Translation-en.diff/Index
+20171001@17:00:43 ==> Ign:44 http://archive.ubuntu.com/ubuntu xenial/multiverse amd64 Packages.diff/Index
+20171001@17:00:44 ==> Ign:45 http://security.ubuntu.com/ubuntu xenial-security/main amd64 Packages
+20171001@17:00:44 ==> Ign:46 http://archive.ubuntu.com/ubuntu xenial/multiverse i386 Packages.diff/Index
+20171001@17:00:44 ==> Ign:47 http://security.ubuntu.com/ubuntu xenial-security/main i386 Packages
+20171001@17:00:44 ==> Ign:48 http://archive.ubuntu.com/ubuntu xenial/multiverse all Packages
+20171001@17:00:44 ==> Ign:9 http://security.ubuntu.com/ubuntu xenial-security/main all Packages
+20171001@17:00:44 ==> Ign:11 http://security.ubuntu.com/ubuntu xenial-security/main Translation-en_US
+20171001@17:00:44 ==> Ign:49 http://archive.ubuntu.com/ubuntu xenial/multiverse Translation-en_US
+20171001@17:00:44 ==> Ign:50 http://archive.ubuntu.com/ubuntu xenial/multiverse Translation-en.diff/Index
+20171001@17:00:44 ==> Ign:51 http://security.ubuntu.com/ubuntu xenial-security/main Translation-en
+20171001@17:00:44 ==> Ign:52 http://archive.ubuntu.com/ubuntu xenial-updates/main amd64 Packages.diff/Index
+20171001@17:00:44 ==> Ign:53 http://security.ubuntu.com/ubuntu xenial-security/restricted amd64 Packages
+20171001@17:00:44 ==> Ign:54 http://archive.ubuntu.com/ubuntu xenial-updates/main i386 Packages.diff/Index
+20171001@17:00:44 ==> Ign:55 http://security.ubuntu.com/ubuntu xenial-security/restricted i386 Packages
+20171001@17:00:44 ==> Ign:18 http://security.ubuntu.com/ubuntu xenial-security/restricted all Packages
+20171001@17:00:44 ==> Ign:56 http://archive.ubuntu.com/ubuntu xenial-updates/main all Packages
+20171001@17:00:44 ==> Ign:57 http://archive.ubuntu.com/ubuntu xenial-updates/main Translation-en_US
+20171001@17:00:44 ==> Ign:20 http://security.ubuntu.com/ubuntu xenial-security/restricted Translation-en_US
+20171001@17:00:44 ==> Ign:58 http://security.ubuntu.com/ubuntu xenial-security/restricted Translation-en
+20171001@17:00:44 ==> Ign:59 http://archive.ubuntu.com/ubuntu xenial-updates/main Translation-en.diff/Index
+20171001@17:00:44 ==> Ign:60 http://archive.ubuntu.com/ubuntu xenial-updates/restricted amd64 Packages.diff/Index
+20171001@17:00:44 ==> Ign:61 http://security.ubuntu.com/ubuntu xenial-security/universe amd64 Packages
+20171001@17:00:44 ==> Ign:62 http://archive.ubuntu.com/ubuntu xenial-updates/restricted i386 Packages.diff/Index
+20171001@17:00:44 ==> Ign:63 http://security.ubuntu.com/ubuntu xenial-security/universe i386 Packages
+20171001@17:00:44 ==> Ign:64 http://archive.ubuntu.com/ubuntu xenial-updates/restricted all Packages
+20171001@17:00:44 ==> Ign:29 http://security.ubuntu.com/ubuntu xenial-security/universe all Packages
+20171001@17:00:44 ==> Ign:31 http://security.ubuntu.com/ubuntu xenial-security/universe Translation-en_US
+20171001@17:00:44 ==> Ign:65 http://archive.ubuntu.com/ubuntu xenial-updates/restricted Translation-en_US
+20171001@17:00:44 ==> Ign:66 http://security.ubuntu.com/ubuntu xenial-security/universe Translation-en
+20171001@17:00:44 ==> Ign:67 http://archive.ubuntu.com/ubuntu xenial-updates/restricted Translation-en.diff/Index
+20171001@17:00:44 ==> Ign:68 http://security.ubuntu.com/ubuntu xenial-security/multiverse amd64 Packages
+20171001@17:00:44 ==> Ign:69 http://archive.ubuntu.com/ubuntu xenial-updates/universe amd64 Packages.diff/Index
+20171001@17:00:44 ==> Ign:70 http://security.ubuntu.com/ubuntu xenial-security/multiverse i386 Packages
+20171001@17:00:44 ==> Ign:39 http://security.ubuntu.com/ubuntu xenial-security/multiverse all Packages
+20171001@17:00:44 ==> Ign:71 http://archive.ubuntu.com/ubuntu xenial-updates/universe i386 Packages.diff/Index
+20171001@17:00:44 ==> Ign:41 http://security.ubuntu.com/ubuntu xenial-security/multiverse Translation-en_US
+20171001@17:00:44 ==> Ign:72 http://archive.ubuntu.com/ubuntu xenial-updates/universe all Packages
+20171001@17:00:44 ==> Ign:73 http://security.ubuntu.com/ubuntu xenial-security/multiverse Translation-en
+20171001@17:00:44 ==> Ign:74 http://archive.ubuntu.com/ubuntu xenial-updates/universe Translation-en_US
+20171001@17:00:44 ==> Ign:45 http://security.ubuntu.com/ubuntu xenial-security/main amd64 Packages
+20171001@17:00:44 ==> Ign:75 http://archive.ubuntu.com/ubuntu xenial-updates/universe Translation-en.diff/Index
+20171001@17:00:44 ==> Ign:47 http://security.ubuntu.com/ubuntu xenial-security/main i386 Packages
+20171001@17:00:44 ==> Ign:76 http://archive.ubuntu.com/ubuntu xenial-updates/multiverse amd64 Packages.diff/Index
+20171001@17:00:44 ==> Ign:9 http://security.ubuntu.com/ubuntu xenial-security/main all Packages
+20171001@17:00:45 ==> Ign:77 http://archive.ubuntu.com/ubuntu xenial-updates/multiverse i386 Packages.diff/Index
+20171001@17:00:45 ==> Ign:11 http://security.ubuntu.com/ubuntu xenial-security/main Translation-en_US
+20171001@17:00:45 ==> Ign:78 http://archive.ubuntu.com/ubuntu xenial-updates/multiverse all Packages
+20171001@17:00:45 ==> Ign:79 http://archive.ubuntu.com/ubuntu xenial-updates/multiverse Translation-en_US
+20171001@17:00:45 ==> Ign:51 http://security.ubuntu.com/ubuntu xenial-security/main Translation-en
+20171001@17:00:45 ==> Ign:80 http://archive.ubuntu.com/ubuntu xenial-updates/multiverse Translation-en.diff/Index
+20171001@17:00:45 ==> Ign:53 http://security.ubuntu.com/ubuntu xenial-security/restricted amd64 Packages
+20171001@17:00:45 ==> Ign:81 http://archive.ubuntu.com/ubuntu xenial-backports/main amd64 Packages.diff/Index
+20171001@17:00:45 ==> Ign:55 http://security.ubuntu.com/ubuntu xenial-security/restricted i386 Packages
+20171001@17:00:45 ==> Ign:82 http://archive.ubuntu.com/ubuntu xenial-backports/main i386 Packages.diff/Index
+20171001@17:00:45 ==> Ign:18 http://security.ubuntu.com/ubuntu xenial-security/restricted all Packages
+20171001@17:00:45 ==> Ign:83 http://archive.ubuntu.com/ubuntu xenial-backports/main all Packages
+20171001@17:00:45 ==> Ign:20 http://security.ubuntu.com/ubuntu xenial-security/restricted Translation-en_US
+20171001@17:00:45 ==> Ign:84 http://archive.ubuntu.com/ubuntu xenial-backports/main Translation-en_US
+20171001@17:00:45 ==> Ign:58 http://security.ubuntu.com/ubuntu xenial-security/restricted Translation-en
+20171001@17:00:45 ==> Ign:85 http://archive.ubuntu.com/ubuntu xenial-backports/main Translation-en.diff/Index
+20171001@17:00:45 ==> Ign:61 http://security.ubuntu.com/ubuntu xenial-security/universe amd64 Packages
+20171001@17:00:45 ==> Ign:86 http://archive.ubuntu.com/ubuntu xenial-backports/restricted amd64 Packages
+20171001@17:00:45 ==> Ign:63 http://security.ubuntu.com/ubuntu xenial-security/universe i386 Packages
+20171001@17:00:45 ==> Ign:87 http://archive.ubuntu.com/ubuntu xenial-backports/restricted i386 Packages
+20171001@17:00:45 ==> Ign:29 http://security.ubuntu.com/ubuntu xenial-security/universe all Packages
+20171001@17:00:45 ==> Ign:88 http://archive.ubuntu.com/ubuntu xenial-backports/restricted all Packages
+20171001@17:00:45 ==> Ign:31 http://security.ubuntu.com/ubuntu xenial-security/universe Translation-en_US
+20171001@17:00:45 ==> Ign:89 http://archive.ubuntu.com/ubuntu xenial-backports/restricted Translation-en_US
+20171001@17:00:45 ==> Ign:66 http://security.ubuntu.com/ubuntu xenial-security/universe Translation-en
+20171001@17:00:45 ==> Ign:90 http://archive.ubuntu.com/ubuntu xenial-backports/restricted Translation-en
+20171001@17:00:45 ==> Ign:91 http://archive.ubuntu.com/ubuntu xenial-backports/universe amd64 Packages.diff/Index
+20171001@17:00:45 ==> Ign:68 http://security.ubuntu.com/ubuntu xenial-security/multiverse amd64 Packages
+20171001@17:00:45 ==> Ign:92 http://archive.ubuntu.com/ubuntu xenial-backports/universe i386 Packages.diff/Index
+20171001@17:00:45 ==> Ign:70 http://security.ubuntu.com/ubuntu xenial-security/multiverse i386 Packages
+20171001@17:00:45 ==> Ign:93 http://archive.ubuntu.com/ubuntu xenial-backports/universe all Packages
+20171001@17:00:45 ==> Ign:39 http://security.ubuntu.com/ubuntu xenial-security/multiverse all Packages
+20171001@17:00:45 ==> Ign:94 http://archive.ubuntu.com/ubuntu xenial-backports/universe Translation-en_US
+20171001@17:00:45 ==> Ign:41 http://security.ubuntu.com/ubuntu xenial-security/multiverse Translation-en_US
+20171001@17:00:45 ==> Ign:95 http://archive.ubuntu.com/ubuntu xenial-backports/universe Translation-en.diff/Index
+20171001@17:00:45 ==> Ign:73 http://security.ubuntu.com/ubuntu xenial-security/multiverse Translation-en
+20171001@17:00:45 ==> Ign:45 http://security.ubuntu.com/ubuntu xenial-security/main amd64 Packages
+20171001@17:00:45 ==> Ign:96 http://archive.ubuntu.com/ubuntu xenial-backports/multiverse amd64 Packages
+20171001@17:00:45 ==> Ign:47 http://security.ubuntu.com/ubuntu xenial-security/main i386 Packages
+20171001@17:00:45 ==> Ign:97 http://archive.ubuntu.com/ubuntu xenial-backports/multiverse i386 Packages
+20171001@17:00:45 ==> Ign:9 http://security.ubuntu.com/ubuntu xenial-security/main all Packages
+20171001@17:00:45 ==> Ign:11 http://security.ubuntu.com/ubuntu xenial-security/main Translation-en_US
+20171001@17:00:45 ==> Ign:98 http://archive.ubuntu.com/ubuntu xenial-backports/multiverse all Packages
+20171001@17:00:45 ==> Ign:51 http://security.ubuntu.com/ubuntu xenial-security/main Translation-en
+20171001@17:00:45 ==> Ign:99 http://archive.ubuntu.com/ubuntu xenial-backports/multiverse Translation-en_US
+20171001@17:00:45 ==> Ign:53 http://security.ubuntu.com/ubuntu xenial-security/restricted amd64 Packages
+20171001@17:00:46 ==> Ign:100 http://archive.ubuntu.com/ubuntu xenial-backports/multiverse Translation-en
+20171001@17:00:46 ==> Ign:101 http://archive.ubuntu.com/ubuntu xenial/main amd64 Packages
+20171001@17:00:46 ==> Ign:55 http://security.ubuntu.com/ubuntu xenial-security/restricted i386 Packages
+20171001@17:00:46 ==> Ign:102 http://archive.ubuntu.com/ubuntu xenial/main i386 Packages
+20171001@17:00:46 ==> Ign:18 http://security.ubuntu.com/ubuntu xenial-security/restricted all Packages
+20171001@17:00:46 ==> Ign:19 http://archive.ubuntu.com/ubuntu xenial/main all Packages
+20171001@17:00:46 ==> Ign:20 http://security.ubuntu.com/ubuntu xenial-security/restricted Translation-en_US
+20171001@17:00:46 ==> Ign:21 http://archive.ubuntu.com/ubuntu xenial/main Translation-en_US
+20171001@17:00:46 ==> Ign:58 http://security.ubuntu.com/ubuntu xenial-security/restricted Translation-en
+20171001@17:00:46 ==> Ign:103 http://archive.ubuntu.com/ubuntu xenial/main Translation-en
+20171001@17:00:46 ==> Ign:61 http://security.ubuntu.com/ubuntu xenial-security/universe amd64 Packages
+20171001@17:00:46 ==> Ign:104 http://archive.ubuntu.com/ubuntu xenial/restricted amd64 Packages
+20171001@17:00:46 ==> Ign:63 http://security.ubuntu.com/ubuntu xenial-security/universe i386 Packages
+20171001@17:00:46 ==> Ign:105 http://archive.ubuntu.com/ubuntu xenial/restricted i386 Packages
+20171001@17:00:46 ==> Ign:29 http://security.ubuntu.com/ubuntu xenial-security/universe all Packages
+20171001@17:00:46 ==> Ign:31 http://security.ubuntu.com/ubuntu xenial-security/universe Translation-en_US
+20171001@17:00:46 ==> Ign:28 http://archive.ubuntu.com/ubuntu xenial/restricted all Packages
+20171001@17:00:46 ==> Ign:66 http://security.ubuntu.com/ubuntu xenial-security/universe Translation-en
+20171001@17:00:46 ==> Ign:30 http://archive.ubuntu.com/ubuntu xenial/restricted Translation-en_US
+20171001@17:00:46 ==> Ign:68 http://security.ubuntu.com/ubuntu xenial-security/multiverse amd64 Packages
+20171001@17:00:46 ==> Ign:106 http://archive.ubuntu.com/ubuntu xenial/restricted Translation-en
+20171001@17:00:46 ==> Ign:70 http://security.ubuntu.com/ubuntu xenial-security/multiverse i386 Packages
+20171001@17:00:46 ==> Ign:107 http://archive.ubuntu.com/ubuntu xenial/universe amd64 Packages
+20171001@17:00:46 ==> Ign:39 http://security.ubuntu.com/ubuntu xenial-security/multiverse all Packages
+20171001@17:00:46 ==> Ign:108 http://archive.ubuntu.com/ubuntu xenial/universe i386 Packages
+20171001@17:00:46 ==> Ign:41 http://security.ubuntu.com/ubuntu xenial-security/multiverse Translation-en_US
+20171001@17:00:46 ==> Ign:38 http://archive.ubuntu.com/ubuntu xenial/universe all Packages
+20171001@17:00:46 ==> Ign:73 http://security.ubuntu.com/ubuntu xenial-security/multiverse Translation-en
+20171001@17:00:46 ==> Ign:45 http://security.ubuntu.com/ubuntu xenial-security/main amd64 Packages
+20171001@17:00:46 ==> Ign:40 http://archive.ubuntu.com/ubuntu xenial/universe Translation-en_US
+20171001@17:00:46 ==> Ign:47 http://security.ubuntu.com/ubuntu xenial-security/main i386 Packages
+20171001@17:00:46 ==> Ign:109 http://archive.ubuntu.com/ubuntu xenial/universe Translation-en
+20171001@17:00:46 ==> Ign:9 http://security.ubuntu.com/ubuntu xenial-security/main all Packages
+20171001@17:00:46 ==> Ign:110 http://archive.ubuntu.com/ubuntu xenial/multiverse amd64 Packages
+20171001@17:00:46 ==> Ign:11 http://security.ubuntu.com/ubuntu xenial-security/main Translation-en_US
+20171001@17:00:46 ==> Ign:111 http://archive.ubuntu.com/ubuntu xenial/multiverse i386 Packages
+20171001@17:00:46 ==> Ign:51 http://security.ubuntu.com/ubuntu xenial-security/main Translation-en
+20171001@17:00:46 ==> Ign:48 http://archive.ubuntu.com/ubuntu xenial/multiverse all Packages
+20171001@17:00:46 ==> Ign:53 http://security.ubuntu.com/ubuntu xenial-security/restricted amd64 Packages
+20171001@17:00:46 ==> Ign:49 http://archive.ubuntu.com/ubuntu xenial/multiverse Translation-en_US
+20171001@17:00:46 ==> Ign:55 http://security.ubuntu.com/ubuntu xenial-security/restricted i386 Packages
+20171001@17:00:46 ==> Ign:112 http://archive.ubuntu.com/ubuntu xenial/multiverse Translation-en
+20171001@17:00:46 ==> Ign:18 http://security.ubuntu.com/ubuntu xenial-security/restricted all Packages
+20171001@17:00:46 ==> Ign:113 http://archive.ubuntu.com/ubuntu xenial-updates/main amd64 Packages
+20171001@17:00:46 ==> Ign:20 http://security.ubuntu.com/ubuntu xenial-security/restricted Translation-en_US
+20171001@17:00:46 ==> Ign:114 http://archive.ubuntu.com/ubuntu xenial-updates/main i386 Packages
+20171001@17:00:46 ==> Ign:58 http://security.ubuntu.com/ubuntu xenial-security/restricted Translation-en
+20171001@17:00:46 ==> Ign:56 http://archive.ubuntu.com/ubuntu xenial-updates/main all Packages
+20171001@17:00:46 ==> Ign:61 http://security.ubuntu.com/ubuntu xenial-security/universe amd64 Packages
+20171001@17:00:46 ==> Ign:57 http://archive.ubuntu.com/ubuntu xenial-updates/main Translation-en_US
+20171001@17:00:46 ==> Ign:63 http://security.ubuntu.com/ubuntu xenial-security/universe i386 Packages
+20171001@17:00:47 ==> Ign:115 http://archive.ubuntu.com/ubuntu xenial-updates/main Translation-en
+20171001@17:00:47 ==> Ign:29 http://security.ubuntu.com/ubuntu xenial-security/universe all Packages
+20171001@17:00:47 ==> Ign:116 http://archive.ubuntu.com/ubuntu xenial-updates/restricted amd64 Packages
+20171001@17:00:47 ==> Ign:31 http://security.ubuntu.com/ubuntu xenial-security/universe Translation-en_US
+20171001@17:00:47 ==> Ign:117 http://archive.ubuntu.com/ubuntu xenial-updates/restricted i386 Packages
+20171001@17:00:47 ==> Ign:66 http://security.ubuntu.com/ubuntu xenial-security/universe Translation-en
+20171001@17:00:47 ==> Ign:64 http://archive.ubuntu.com/ubuntu xenial-updates/restricted all Packages
+20171001@17:00:47 ==> Ign:68 http://security.ubuntu.com/ubuntu xenial-security/multiverse amd64 Packages
+20171001@17:00:47 ==> Ign:65 http://archive.ubuntu.com/ubuntu xenial-updates/restricted Translation-en_US
+20171001@17:00:47 ==> Ign:70 http://security.ubuntu.com/ubuntu xenial-security/multiverse i386 Packages
+20171001@17:00:47 ==> Ign:118 http://archive.ubuntu.com/ubuntu xenial-updates/restricted Translation-en
+20171001@17:00:47 ==> Ign:39 http://security.ubuntu.com/ubuntu xenial-security/multiverse all Packages
+20171001@17:00:47 ==> Ign:119 http://archive.ubuntu.com/ubuntu xenial-updates/universe amd64 Packages
+20171001@17:00:47 ==> Ign:41 http://security.ubuntu.com/ubuntu xenial-security/multiverse Translation-en_US
+20171001@17:00:47 ==> Ign:120 http://archive.ubuntu.com/ubuntu xenial-updates/universe i386 Packages
+20171001@17:00:47 ==> Ign:73 http://security.ubuntu.com/ubuntu xenial-security/multiverse Translation-en
+20171001@17:00:47 ==> Ign:72 http://archive.ubuntu.com/ubuntu xenial-updates/universe all Packages
+20171001@17:00:47 ==> Ign:45 http://security.ubuntu.com/ubuntu xenial-security/main amd64 Packages
+20171001@17:00:47 ==> Ign:74 http://archive.ubuntu.com/ubuntu xenial-updates/universe Translation-en_US
+20171001@17:00:47 ==> Ign:47 http://security.ubuntu.com/ubuntu xenial-security/main i386 Packages
+20171001@17:00:47 ==> Ign:121 http://archive.ubuntu.com/ubuntu xenial-updates/universe Translation-en
+20171001@17:00:47 ==> Ign:9 http://security.ubuntu.com/ubuntu xenial-security/main all Packages
+20171001@17:00:47 ==> Ign:122 http://archive.ubuntu.com/ubuntu xenial-updates/multiverse amd64 Packages
+20171001@17:00:47 ==> Ign:11 http://security.ubuntu.com/ubuntu xenial-security/main Translation-en_US
+20171001@17:00:47 ==> Ign:123 http://archive.ubuntu.com/ubuntu xenial-updates/multiverse i386 Packages
+20171001@17:00:47 ==> Ign:51 http://security.ubuntu.com/ubuntu xenial-security/main Translation-en
+20171001@17:00:47 ==> Ign:78 http://archive.ubuntu.com/ubuntu xenial-updates/multiverse all Packages
+20171001@17:00:47 ==> Ign:53 http://security.ubuntu.com/ubuntu xenial-security/restricted amd64 Packages
+20171001@17:00:47 ==> Ign:79 http://archive.ubuntu.com/ubuntu xenial-updates/multiverse Translation-en_US
+20171001@17:00:47 ==> Ign:55 http://security.ubuntu.com/ubuntu xenial-security/restricted i386 Packages
+20171001@17:00:47 ==> Ign:124 http://archive.ubuntu.com/ubuntu xenial-updates/multiverse Translation-en
+20171001@17:00:47 ==> Ign:18 http://security.ubuntu.com/ubuntu xenial-security/restricted all Packages
+20171001@17:00:47 ==> Ign:125 http://archive.ubuntu.com/ubuntu xenial-backports/main amd64 Packages
+20171001@17:00:47 ==> Ign:20 http://security.ubuntu.com/ubuntu xenial-security/restricted Translation-en_US
+20171001@17:00:47 ==> Ign:126 http://archive.ubuntu.com/ubuntu xenial-backports/main i386 Packages
+20171001@17:00:47 ==> Ign:83 http://archive.ubuntu.com/ubuntu xenial-backports/main all Packages
+20171001@17:00:47 ==> Ign:58 http://security.ubuntu.com/ubuntu xenial-security/restricted Translation-en
+20171001@17:00:47 ==> Ign:84 http://archive.ubuntu.com/ubuntu xenial-backports/main Translation-en_US
+20171001@17:00:47 ==> Ign:61 http://security.ubuntu.com/ubuntu xenial-security/universe amd64 Packages
+20171001@17:00:47 ==> Ign:127 http://archive.ubuntu.com/ubuntu xenial-backports/main Translation-en
+20171001@17:00:47 ==> Ign:63 http://security.ubuntu.com/ubuntu xenial-security/universe i386 Packages
+20171001@17:00:47 ==> Ign:29 http://security.ubuntu.com/ubuntu xenial-security/universe all Packages
+20171001@17:00:47 ==> Ign:86 http://archive.ubuntu.com/ubuntu xenial-backports/restricted amd64 Packages
+20171001@17:00:47 ==> Ign:31 http://security.ubuntu.com/ubuntu xenial-security/universe Translation-en_US
+20171001@17:00:48 ==> Ign:87 http://archive.ubuntu.com/ubuntu xenial-backports/restricted i386 Packages
+20171001@17:00:48 ==> Ign:66 http://security.ubuntu.com/ubuntu xenial-security/universe Translation-en
+20171001@17:00:48 ==> Ign:88 http://archive.ubuntu.com/ubuntu xenial-backports/restricted all Packages
+20171001@17:00:48 ==> Ign:68 http://security.ubuntu.com/ubuntu xenial-security/multiverse amd64 Packages
+20171001@17:00:48 ==> Ign:89 http://archive.ubuntu.com/ubuntu xenial-backports/restricted Translation-en_US
+20171001@17:00:48 ==> Ign:90 http://archive.ubuntu.com/ubuntu xenial-backports/restricted Translation-en
+20171001@17:00:48 ==> Ign:70 http://security.ubuntu.com/ubuntu xenial-security/multiverse i386 Packages
+20171001@17:00:48 ==> Ign:39 http://security.ubuntu.com/ubuntu xenial-security/multiverse all Packages
+20171001@17:00:48 ==> Ign:128 http://archive.ubuntu.com/ubuntu xenial-backports/universe amd64 Packages
+20171001@17:00:48 ==> Ign:41 http://security.ubuntu.com/ubuntu xenial-security/multiverse Translation-en_US
+20171001@17:00:48 ==> Ign:129 http://archive.ubuntu.com/ubuntu xenial-backports/universe i386 Packages
+20171001@17:00:48 ==> Ign:73 http://security.ubuntu.com/ubuntu xenial-security/multiverse Translation-en
+20171001@17:00:48 ==> Ign:93 http://archive.ubuntu.com/ubuntu xenial-backports/universe all Packages
+20171001@17:00:48 ==> Err:45 http://security.ubuntu.com/ubuntu xenial-security/main amd64 Packages
+20171001@17:00:48 ==> Connection failed [IP: 10.0.0.1 80]
+20171001@17:00:48 ==> Ign:94 http://archive.ubuntu.com/ubuntu xenial-backports/universe Translation-en_US
+20171001@17:00:48 ==> Ign:47 http://security.ubuntu.com/ubuntu xenial-security/main i386 Packages
+20171001@17:00:48 ==> Ign:130 http://archive.ubuntu.com/ubuntu xenial-backports/universe Translation-en
+20171001@17:00:48 ==> Ign:96 http://archive.ubuntu.com/ubuntu xenial-backports/multiverse amd64 Packages
+20171001@17:00:48 ==> Ign:51 http://security.ubuntu.com/ubuntu xenial-security/main Translation-en
+20171001@17:00:48 ==> Ign:97 http://archive.ubuntu.com/ubuntu xenial-backports/multiverse i386 Packages
+20171001@17:00:48 ==> Ign:53 http://security.ubuntu.com/ubuntu xenial-security/restricted amd64 Packages
+20171001@17:00:48 ==> Ign:98 http://archive.ubuntu.com/ubuntu xenial-backports/multiverse all Packages
+20171001@17:00:48 ==> Ign:55 http://security.ubuntu.com/ubuntu xenial-security/restricted i386 Packages
+20171001@17:00:48 ==> Ign:99 http://archive.ubuntu.com/ubuntu xenial-backports/multiverse Translation-en_US
+20171001@17:00:48 ==> Ign:58 http://security.ubuntu.com/ubuntu xenial-security/restricted Translation-en
+20171001@17:00:48 ==> Ign:100 http://archive.ubuntu.com/ubuntu xenial-backports/multiverse Translation-en
+20171001@17:00:48 ==> Ign:61 http://security.ubuntu.com/ubuntu xenial-security/universe amd64 Packages
+20171001@17:00:48 ==> Ign:101 http://archive.ubuntu.com/ubuntu xenial/main amd64 Packages
+20171001@17:00:48 ==> Ign:63 http://security.ubuntu.com/ubuntu xenial-security/universe i386 Packages
+20171001@17:00:48 ==> Ign:102 http://archive.ubuntu.com/ubuntu xenial/main i386 Packages
+20171001@17:00:48 ==> Ign:66 http://security.ubuntu.com/ubuntu xenial-security/universe Translation-en
+20171001@17:00:48 ==> Ign:19 http://archive.ubuntu.com/ubuntu xenial/main all Packages
+20171001@17:00:48 ==> Ign:68 http://security.ubuntu.com/ubuntu xenial-security/multiverse amd64 Packages
+20171001@17:00:48 ==> Ign:21 http://archive.ubuntu.com/ubuntu xenial/main Translation-en_US
+20171001@17:00:48 ==> Ign:70 http://security.ubuntu.com/ubuntu xenial-security/multiverse i386 Packages
+20171001@17:00:49 ==> Ign:103 http://archive.ubuntu.com/ubuntu xenial/main Translation-en
+20171001@17:00:49 ==> Ign:104 http://archive.ubuntu.com/ubuntu xenial/restricted amd64 Packages
+20171001@17:00:49 ==> Ign:105 http://archive.ubuntu.com/ubuntu xenial/restricted i386 Packages
+20171001@17:00:49 ==> Ign:28 http://archive.ubuntu.com/ubuntu xenial/restricted all Packages
+20171001@17:00:49 ==> Ign:30 http://archive.ubuntu.com/ubuntu xenial/restricted Translation-en_US
+20171001@17:00:49 ==> Ign:106 http://archive.ubuntu.com/ubuntu xenial/restricted Translation-en
+20171001@17:00:49 ==> Ign:107 http://archive.ubuntu.com/ubuntu xenial/universe amd64 Packages
+20171001@17:00:49 ==> Ign:108 http://archive.ubuntu.com/ubuntu xenial/universe i386 Packages
+20171001@17:00:49 ==> Ign:38 http://archive.ubuntu.com/ubuntu xenial/universe all Packages
+20171001@17:00:49 ==> Ign:40 http://archive.ubuntu.com/ubuntu xenial/universe Translation-en_US
+20171001@17:00:49 ==> Ign:109 http://archive.ubuntu.com/ubuntu xenial/universe Translation-en
+20171001@17:00:49 ==> Ign:110 http://archive.ubuntu.com/ubuntu xenial/multiverse amd64 Packages
+20171001@17:00:49 ==> Ign:111 http://archive.ubuntu.com/ubuntu xenial/multiverse i386 Packages
+20171001@17:00:49 ==> Ign:48 http://archive.ubuntu.com/ubuntu xenial/multiverse all Packages
+20171001@17:00:49 ==> Ign:49 http://archive.ubuntu.com/ubuntu xenial/multiverse Translation-en_US
+20171001@17:00:49 ==> Ign:112 http://archive.ubuntu.com/ubuntu xenial/multiverse Translation-en
+20171001@17:00:49 ==> Ign:113 http://archive.ubuntu.com/ubuntu xenial-updates/main amd64 Packages
+20171001@17:00:49 ==> Ign:114 http://archive.ubuntu.com/ubuntu xenial-updates/main i386 Packages
+20171001@17:00:49 ==> Ign:56 http://archive.ubuntu.com/ubuntu xenial-updates/main all Packages
+20171001@17:00:49 ==> Ign:57 http://archive.ubuntu.com/ubuntu xenial-updates/main Translation-en_US
+20171001@17:00:49 ==> Ign:115 http://archive.ubuntu.com/ubuntu xenial-updates/main Translation-en
+20171001@17:00:49 ==> Ign:116 http://archive.ubuntu.com/ubuntu xenial-updates/restricted amd64 Packages
+20171001@17:00:49 ==> Ign:117 http://archive.ubuntu.com/ubuntu xenial-updates/restricted i386 Packages
+20171001@17:00:49 ==> Ign:64 http://archive.ubuntu.com/ubuntu xenial-updates/restricted all Packages
+20171001@17:00:49 ==> Ign:65 http://archive.ubuntu.com/ubuntu xenial-updates/restricted Translation-en_US
+20171001@17:00:49 ==> Ign:118 http://archive.ubuntu.com/ubuntu xenial-updates/restricted Translation-en
+20171001@17:00:49 ==> Ign:119 http://archive.ubuntu.com/ubuntu xenial-updates/universe amd64 Packages
+20171001@17:00:49 ==> Ign:120 http://archive.ubuntu.com/ubuntu xenial-updates/universe i386 Packages
+20171001@17:00:49 ==> Ign:72 http://archive.ubuntu.com/ubuntu xenial-updates/universe all Packages
+20171001@17:00:49 ==> Ign:74 http://archive.ubuntu.com/ubuntu xenial-updates/universe Translation-en_US
+20171001@17:00:49 ==> Ign:121 http://archive.ubuntu.com/ubuntu xenial-updates/universe Translation-en
+20171001@17:00:49 ==> Ign:122 http://archive.ubuntu.com/ubuntu xenial-updates/multiverse amd64 Packages
+20171001@17:00:49 ==> Ign:123 http://archive.ubuntu.com/ubuntu xenial-updates/multiverse i386 Packages
+20171001@17:00:49 ==> Ign:78 http://archive.ubuntu.com/ubuntu xenial-updates/multiverse all Packages
+20171001@17:00:49 ==> Ign:79 http://archive.ubuntu.com/ubuntu xenial-updates/multiverse Translation-en_US
+20171001@17:00:49 ==> Ign:124 http://archive.ubuntu.com/ubuntu xenial-updates/multiverse Translation-en
+20171001@17:00:49 ==> Ign:125 http://archive.ubuntu.com/ubuntu xenial-backports/main amd64 Packages
+20171001@17:00:50 ==> Ign:126 http://archive.ubuntu.com/ubuntu xenial-backports/main i386 Packages
+20171001@17:00:50 ==> Ign:83 http://archive.ubuntu.com/ubuntu xenial-backports/main all Packages
+20171001@17:00:50 ==> Ign:84 http://archive.ubuntu.com/ubuntu xenial-backports/main Translation-en_US
+20171001@17:00:50 ==> Ign:127 http://archive.ubuntu.com/ubuntu xenial-backports/main Translation-en
+20171001@17:00:50 ==> Ign:86 http://archive.ubuntu.com/ubuntu xenial-backports/restricted amd64 Packages
+20171001@17:00:50 ==> Ign:87 http://archive.ubuntu.com/ubuntu xenial-backports/restricted i386 Packages
+20171001@17:00:50 ==> Ign:88 http://archive.ubuntu.com/ubuntu xenial-backports/restricted all Packages
+20171001@17:00:50 ==> Ign:89 http://archive.ubuntu.com/ubuntu xenial-backports/restricted Translation-en_US
+20171001@17:00:50 ==> Ign:90 http://archive.ubuntu.com/ubuntu xenial-backports/restricted Translation-en
+20171001@17:00:50 ==> Ign:128 http://archive.ubuntu.com/ubuntu xenial-backports/universe amd64 Packages
+20171001@17:00:50 ==> Ign:129 http://archive.ubuntu.com/ubuntu xenial-backports/universe i386 Packages
+20171001@17:00:50 ==> Ign:93 http://archive.ubuntu.com/ubuntu xenial-backports/universe all Packages
+20171001@17:00:50 ==> Ign:94 http://archive.ubuntu.com/ubuntu xenial-backports/universe Translation-en_US
+20171001@17:00:50 ==> Ign:130 http://archive.ubuntu.com/ubuntu xenial-backports/universe Translation-en
+20171001@17:00:50 ==> Ign:96 http://archive.ubuntu.com/ubuntu xenial-backports/multiverse amd64 Packages
+20171001@17:00:50 ==> Ign:97 http://archive.ubuntu.com/ubuntu xenial-backports/multiverse i386 Packages
+20171001@17:00:50 ==> Ign:98 http://archive.ubuntu.com/ubuntu xenial-backports/multiverse all Packages
+20171001@17:00:50 ==> Ign:99 http://archive.ubuntu.com/ubuntu xenial-backports/multiverse Translation-en_US
+20171001@17:00:50 ==> Ign:100 http://archive.ubuntu.com/ubuntu xenial-backports/multiverse Translation-en
+20171001@17:00:50 ==> Ign:101 http://archive.ubuntu.com/ubuntu xenial/main amd64 Packages
+20171001@17:00:50 ==> Ign:102 http://archive.ubuntu.com/ubuntu xenial/main i386 Packages
+20171001@17:00:50 ==> Ign:19 http://archive.ubuntu.com/ubuntu xenial/main all Packages
+20171001@17:00:50 ==> Ign:21 http://archive.ubuntu.com/ubuntu xenial/main Translation-en_US
+20171001@17:00:50 ==> Ign:103 http://archive.ubuntu.com/ubuntu xenial/main Translation-en
+20171001@17:00:50 ==> Ign:104 http://archive.ubuntu.com/ubuntu xenial/restricted amd64 Packages
+20171001@17:00:50 ==> Ign:105 http://archive.ubuntu.com/ubuntu xenial/restricted i386 Packages
+20171001@17:00:50 ==> Ign:28 http://archive.ubuntu.com/ubuntu xenial/restricted all Packages
+20171001@17:00:50 ==> Ign:30 http://archive.ubuntu.com/ubuntu xenial/restricted Translation-en_US
+20171001@17:00:50 ==> Ign:106 http://archive.ubuntu.com/ubuntu xenial/restricted Translation-en
+20171001@17:00:50 ==> Ign:107 http://archive.ubuntu.com/ubuntu xenial/universe amd64 Packages
+20171001@17:00:50 ==> Ign:108 http://archive.ubuntu.com/ubuntu xenial/universe i386 Packages
+20171001@17:00:50 ==> Ign:38 http://archive.ubuntu.com/ubuntu xenial/universe all Packages
+20171001@17:00:50 ==> Ign:40 http://archive.ubuntu.com/ubuntu xenial/universe Translation-en_US
+20171001@17:00:50 ==> Ign:109 http://archive.ubuntu.com/ubuntu xenial/universe Translation-en
+20171001@17:00:50 ==> Ign:110 http://archive.ubuntu.com/ubuntu xenial/multiverse amd64 Packages
+20171001@17:00:50 ==> Ign:111 http://archive.ubuntu.com/ubuntu xenial/multiverse i386 Packages
+20171001@17:00:51 ==> Ign:48 http://archive.ubuntu.com/ubuntu xenial/multiverse all Packages
+20171001@17:00:51 ==> Ign:49 http://archive.ubuntu.com/ubuntu xenial/multiverse Translation-en_US
+20171001@17:00:51 ==> Ign:112 http://archive.ubuntu.com/ubuntu xenial/multiverse Translation-en
+20171001@17:00:51 ==> Ign:113 http://archive.ubuntu.com/ubuntu xenial-updates/main amd64 Packages
+20171001@17:00:51 ==> Ign:114 http://archive.ubuntu.com/ubuntu xenial-updates/main i386 Packages
+20171001@17:00:51 ==> Ign:56 http://archive.ubuntu.com/ubuntu xenial-updates/main all Packages
+20171001@17:00:51 ==> Ign:57 http://archive.ubuntu.com/ubuntu xenial-updates/main Translation-en_US
+20171001@17:00:51 ==> Ign:115 http://archive.ubuntu.com/ubuntu xenial-updates/main Translation-en
+20171001@17:00:51 ==> Ign:116 http://archive.ubuntu.com/ubuntu xenial-updates/restricted amd64 Packages
+20171001@17:00:51 ==> Ign:117 http://archive.ubuntu.com/ubuntu xenial-updates/restricted i386 Packages
+20171001@17:00:51 ==> Ign:64 http://archive.ubuntu.com/ubuntu xenial-updates/restricted all Packages
+20171001@17:00:51 ==> Ign:65 http://archive.ubuntu.com/ubuntu xenial-updates/restricted Translation-en_US
+20171001@17:00:51 ==> Ign:118 http://archive.ubuntu.com/ubuntu xenial-updates/restricted Translation-en
+20171001@17:00:51 ==> Ign:119 http://archive.ubuntu.com/ubuntu xenial-updates/universe amd64 Packages
+20171001@17:00:51 ==> Ign:120 http://archive.ubuntu.com/ubuntu xenial-updates/universe i386 Packages
+20171001@17:00:51 ==> Ign:72 http://archive.ubuntu.com/ubuntu xenial-updates/universe all Packages
+20171001@17:00:51 ==> Ign:74 http://archive.ubuntu.com/ubuntu xenial-updates/universe Translation-en_US
+20171001@17:00:51 ==> Ign:121 http://archive.ubuntu.com/ubuntu xenial-updates/universe Translation-en
+20171001@17:00:51 ==> Ign:122 http://archive.ubuntu.com/ubuntu xenial-updates/multiverse amd64 Packages
+20171001@17:00:51 ==> Ign:123 http://archive.ubuntu.com/ubuntu xenial-updates/multiverse i386 Packages
+20171001@17:00:51 ==> Ign:78 http://archive.ubuntu.com/ubuntu xenial-updates/multiverse all Packages
+20171001@17:00:51 ==> Ign:79 http://archive.ubuntu.com/ubuntu xenial-updates/multiverse Translation-en_US
+20171001@17:00:51 ==> Ign:124 http://archive.ubuntu.com/ubuntu xenial-updates/multiverse Translation-en
+20171001@17:00:51 ==> Ign:125 http://archive.ubuntu.com/ubuntu xenial-backports/main amd64 Packages
+20171001@17:00:51 ==> Ign:126 http://archive.ubuntu.com/ubuntu xenial-backports/main i386 Packages
+20171001@17:00:51 ==> Ign:83 http://archive.ubuntu.com/ubuntu xenial-backports/main all Packages
+20171001@17:00:51 ==> Ign:84 http://archive.ubuntu.com/ubuntu xenial-backports/main Translation-en_US
+20171001@17:00:51 ==> Ign:127 http://archive.ubuntu.com/ubuntu xenial-backports/main Translation-en
+20171001@17:00:51 ==> Ign:86 http://archive.ubuntu.com/ubuntu xenial-backports/restricted amd64 Packages
+20171001@17:00:51 ==> Ign:87 http://archive.ubuntu.com/ubuntu xenial-backports/restricted i386 Packages
+20171001@17:00:51 ==> Ign:88 http://archive.ubuntu.com/ubuntu xenial-backports/restricted all Packages
+20171001@17:00:51 ==> Ign:89 http://archive.ubuntu.com/ubuntu xenial-backports/restricted Translation-en_US
+20171001@17:00:51 ==> Ign:90 http://archive.ubuntu.com/ubuntu xenial-backports/restricted Translation-en
+20171001@17:00:51 ==> Ign:128 http://archive.ubuntu.com/ubuntu xenial-backports/universe amd64 Packages
+20171001@17:00:51 ==> Ign:129 http://archive.ubuntu.com/ubuntu xenial-backports/universe i386 Packages
+20171001@17:00:51 ==> Ign:93 http://archive.ubuntu.com/ubuntu xenial-backports/universe all Packages
+20171001@17:00:51 ==> Ign:94 http://archive.ubuntu.com/ubuntu xenial-backports/universe Translation-en_US
+20171001@17:00:51 ==> Ign:130 http://archive.ubuntu.com/ubuntu xenial-backports/universe Translation-en
+20171001@17:00:51 ==> Ign:96 http://archive.ubuntu.com/ubuntu xenial-backports/multiverse amd64 Packages
+20171001@17:00:51 ==> Ign:97 http://archive.ubuntu.com/ubuntu xenial-backports/multiverse i386 Packages
+20171001@17:00:51 ==> Ign:98 http://archive.ubuntu.com/ubuntu xenial-backports/multiverse all Packages
+20171001@17:00:51 ==> Ign:99 http://archive.ubuntu.com/ubuntu xenial-backports/multiverse Translation-en_US
+20171001@17:00:51 ==> Ign:100 http://archive.ubuntu.com/ubuntu xenial-backports/multiverse Translation-en
+20171001@17:00:51 ==> Ign:101 http://archive.ubuntu.com/ubuntu xenial/main amd64 Packages
+20171001@17:00:51 ==> Ign:102 http://archive.ubuntu.com/ubuntu xenial/main i386 Packages
+20171001@17:00:51 ==> Ign:19 http://archive.ubuntu.com/ubuntu xenial/main all Packages
+20171001@17:00:51 ==> Ign:21 http://archive.ubuntu.com/ubuntu xenial/main Translation-en_US
+20171001@17:00:51 ==> Ign:103 http://archive.ubuntu.com/ubuntu xenial/main Translation-en
+20171001@17:00:51 ==> Ign:104 http://archive.ubuntu.com/ubuntu xenial/restricted amd64 Packages
+20171001@17:00:51 ==> Ign:105 http://archive.ubuntu.com/ubuntu xenial/restricted i386 Packages
+20171001@17:00:51 ==> Ign:28 http://archive.ubuntu.com/ubuntu xenial/restricted all Packages
+20171001@17:00:51 ==> Ign:30 http://archive.ubuntu.com/ubuntu xenial/restricted Translation-en_US
+20171001@17:00:51 ==> Ign:106 http://archive.ubuntu.com/ubuntu xenial/restricted Translation-en
+20171001@17:00:51 ==> Ign:107 http://archive.ubuntu.com/ubuntu xenial/universe amd64 Packages
+20171001@17:00:51 ==> Ign:108 http://archive.ubuntu.com/ubuntu xenial/universe i386 Packages
+20171001@17:00:51 ==> Ign:38 http://archive.ubuntu.com/ubuntu xenial/universe all Packages
+20171001@17:00:51 ==> Ign:40 http://archive.ubuntu.com/ubuntu xenial/universe Translation-en_US
+20171001@17:00:51 ==> Ign:109 http://archive.ubuntu.com/ubuntu xenial/universe Translation-en
+20171001@17:00:51 ==> Ign:110 http://archive.ubuntu.com/ubuntu xenial/multiverse amd64 Packages
+20171001@17:00:51 ==> Ign:111 http://archive.ubuntu.com/ubuntu xenial/multiverse i386 Packages
+20171001@17:00:51 ==> Ign:48 http://archive.ubuntu.com/ubuntu xenial/multiverse all Packages
+20171001@17:00:51 ==> Ign:49 http://archive.ubuntu.com/ubuntu xenial/multiverse Translation-en_US
+20171001@17:00:51 ==> Ign:112 http://archive.ubuntu.com/ubuntu xenial/multiverse Translation-en
+20171001@17:00:51 ==> Ign:113 http://archive.ubuntu.com/ubuntu xenial-updates/main amd64 Packages
+20171001@17:00:51 ==> Ign:114 http://archive.ubuntu.com/ubuntu xenial-updates/main i386 Packages
+20171001@17:00:51 ==> Ign:56 http://archive.ubuntu.com/ubuntu xenial-updates/main all Packages
+20171001@17:00:51 ==> Ign:57 http://archive.ubuntu.com/ubuntu xenial-updates/main Translation-en_US
+20171001@17:00:51 ==> Ign:115 http://archive.ubuntu.com/ubuntu xenial-updates/main Translation-en
+20171001@17:00:51 ==> Ign:116 http://archive.ubuntu.com/ubuntu xenial-updates/restricted amd64 Packages
+20171001@17:00:51 ==> Ign:117 http://archive.ubuntu.com/ubuntu xenial-updates/restricted i386 Packages
+20171001@17:00:51 ==> Ign:64 http://archive.ubuntu.com/ubuntu xenial-updates/restricted all Packages
+20171001@17:00:51 ==> Ign:65 http://archive.ubuntu.com/ubuntu xenial-updates/restricted Translation-en_US
+20171001@17:00:51 ==> Ign:118 http://archive.ubuntu.com/ubuntu xenial-updates/restricted Translation-en
+20171001@17:00:51 ==> Ign:119 http://archive.ubuntu.com/ubuntu xenial-updates/universe amd64 Packages
+20171001@17:00:51 ==> Ign:120 http://archive.ubuntu.com/ubuntu xenial-updates/universe i386 Packages
+20171001@17:00:51 ==> Ign:72 http://archive.ubuntu.com/ubuntu xenial-updates/universe all Packages
+20171001@17:00:51 ==> Ign:74 http://archive.ubuntu.com/ubuntu xenial-updates/universe Translation-en_US
+20171001@17:00:51 ==> Ign:121 http://archive.ubuntu.com/ubuntu xenial-updates/universe Translation-en
+20171001@17:00:51 ==> Ign:122 http://archive.ubuntu.com/ubuntu xenial-updates/multiverse amd64 Packages
+20171001@17:00:51 ==> Ign:123 http://archive.ubuntu.com/ubuntu xenial-updates/multiverse i386 Packages
+20171001@17:00:51 ==> Ign:78 http://archive.ubuntu.com/ubuntu xenial-updates/multiverse all Packages
+20171001@17:00:51 ==> Ign:79 http://archive.ubuntu.com/ubuntu xenial-updates/multiverse Translation-en_US
+20171001@17:00:51 ==> Ign:124 http://archive.ubuntu.com/ubuntu xenial-updates/multiverse Translation-en
+20171001@17:00:51 ==> Ign:125 http://archive.ubuntu.com/ubuntu xenial-backports/main amd64 Packages
+20171001@17:00:51 ==> Ign:126 http://archive.ubuntu.com/ubuntu xenial-backports/main i386 Packages
+20171001@17:00:51 ==> Ign:83 http://archive.ubuntu.com/ubuntu xenial-backports/main all Packages
+20171001@17:00:51 ==> Ign:84 http://archive.ubuntu.com/ubuntu xenial-backports/main Translation-en_US
+20171001@17:00:51 ==> Ign:127 http://archive.ubuntu.com/ubuntu xenial-backports/main Translation-en
+20171001@17:00:51 ==> Ign:86 http://archive.ubuntu.com/ubuntu xenial-backports/restricted amd64 Packages
+20171001@17:00:51 ==> Ign:87 http://archive.ubuntu.com/ubuntu xenial-backports/restricted i386 Packages
+20171001@17:00:51 ==> Ign:88 http://archive.ubuntu.com/ubuntu xenial-backports/restricted all Packages
+20171001@17:00:51 ==> Ign:89 http://archive.ubuntu.com/ubuntu xenial-backports/restricted Translation-en_US
+20171001@17:00:51 ==> Ign:90 http://archive.ubuntu.com/ubuntu xenial-backports/restricted Translation-en
+20171001@17:00:51 ==> Ign:128 http://archive.ubuntu.com/ubuntu xenial-backports/universe amd64 Packages
+20171001@17:00:51 ==> Ign:129 http://archive.ubuntu.com/ubuntu xenial-backports/universe i386 Packages
+20171001@17:00:51 ==> Ign:93 http://archive.ubuntu.com/ubuntu xenial-backports/universe all Packages
+20171001@17:00:51 ==> Ign:94 http://archive.ubuntu.com/ubuntu xenial-backports/universe Translation-en_US
+20171001@17:00:51 ==> Ign:130 http://archive.ubuntu.com/ubuntu xenial-backports/universe Translation-en
+20171001@17:00:51 ==> Ign:96 http://archive.ubuntu.com/ubuntu xenial-backports/multiverse amd64 Packages
+20171001@17:00:51 ==> Ign:97 http://archive.ubuntu.com/ubuntu xenial-backports/multiverse i386 Packages
+20171001@17:00:51 ==> Ign:98 http://archive.ubuntu.com/ubuntu xenial-backports/multiverse all Packages
+20171001@17:00:52 ==> Ign:99 http://archive.ubuntu.com/ubuntu xenial-backports/multiverse Translation-en_US
+20171001@17:00:52 ==> Ign:100 http://archive.ubuntu.com/ubuntu xenial-backports/multiverse Translation-en
+20171001@17:00:52 ==> Ign:101 http://archive.ubuntu.com/ubuntu xenial/main amd64 Packages
+20171001@17:00:52 ==> Ign:102 http://archive.ubuntu.com/ubuntu xenial/main i386 Packages
+20171001@17:00:52 ==> Ign:19 http://archive.ubuntu.com/ubuntu xenial/main all Packages
+20171001@17:00:52 ==> Ign:21 http://archive.ubuntu.com/ubuntu xenial/main Translation-en_US
+20171001@17:00:52 ==> Ign:103 http://archive.ubuntu.com/ubuntu xenial/main Translation-en
+20171001@17:00:52 ==> Ign:104 http://archive.ubuntu.com/ubuntu xenial/restricted amd64 Packages
+20171001@17:00:52 ==> Ign:105 http://archive.ubuntu.com/ubuntu xenial/restricted i386 Packages
+20171001@17:00:52 ==> Ign:28 http://archive.ubuntu.com/ubuntu xenial/restricted all Packages
+20171001@17:00:52 ==> Ign:30 http://archive.ubuntu.com/ubuntu xenial/restricted Translation-en_US
+20171001@17:00:52 ==> Ign:106 http://archive.ubuntu.com/ubuntu xenial/restricted Translation-en
+20171001@17:00:52 ==> Ign:107 http://archive.ubuntu.com/ubuntu xenial/universe amd64 Packages
+20171001@17:00:52 ==> Ign:108 http://archive.ubuntu.com/ubuntu xenial/universe i386 Packages
+20171001@17:00:52 ==> Ign:38 http://archive.ubuntu.com/ubuntu xenial/universe all Packages
+20171001@17:00:52 ==> Ign:40 http://archive.ubuntu.com/ubuntu xenial/universe Translation-en_US
+20171001@17:00:52 ==> Ign:109 http://archive.ubuntu.com/ubuntu xenial/universe Translation-en
+20171001@17:00:52 ==> Ign:110 http://archive.ubuntu.com/ubuntu xenial/multiverse amd64 Packages
+20171001@17:00:52 ==> Ign:111 http://archive.ubuntu.com/ubuntu xenial/multiverse i386 Packages
+20171001@17:00:52 ==> Ign:48 http://archive.ubuntu.com/ubuntu xenial/multiverse all Packages
+20171001@17:00:52 ==> Ign:49 http://archive.ubuntu.com/ubuntu xenial/multiverse Translation-en_US
+20171001@17:00:52 ==> Ign:112 http://archive.ubuntu.com/ubuntu xenial/multiverse Translation-en
+20171001@17:00:52 ==> Ign:113 http://archive.ubuntu.com/ubuntu xenial-updates/main amd64 Packages
+20171001@17:00:52 ==> Ign:114 http://archive.ubuntu.com/ubuntu xenial-updates/main i386 Packages
+20171001@17:00:52 ==> Ign:56 http://archive.ubuntu.com/ubuntu xenial-updates/main all Packages
+20171001@17:00:52 ==> Ign:57 http://archive.ubuntu.com/ubuntu xenial-updates/main Translation-en_US
+20171001@17:00:52 ==> Ign:115 http://archive.ubuntu.com/ubuntu xenial-updates/main Translation-en
+20171001@17:00:52 ==> Ign:116 http://archive.ubuntu.com/ubuntu xenial-updates/restricted amd64 Packages
+20171001@17:00:52 ==> Ign:117 http://archive.ubuntu.com/ubuntu xenial-updates/restricted i386 Packages
+20171001@17:00:52 ==> Ign:64 http://archive.ubuntu.com/ubuntu xenial-updates/restricted all Packages
+20171001@17:00:52 ==> Ign:65 http://archive.ubuntu.com/ubuntu xenial-updates/restricted Translation-en_US
+20171001@17:00:52 ==> Ign:118 http://archive.ubuntu.com/ubuntu xenial-updates/restricted Translation-en
+20171001@17:00:52 ==> Ign:119 http://archive.ubuntu.com/ubuntu xenial-updates/universe amd64 Packages
+20171001@17:00:52 ==> Ign:120 http://archive.ubuntu.com/ubuntu xenial-updates/universe i386 Packages
+20171001@17:00:52 ==> Ign:72 http://archive.ubuntu.com/ubuntu xenial-updates/universe all Packages
+20171001@17:00:52 ==> Ign:74 http://archive.ubuntu.com/ubuntu xenial-updates/universe Translation-en_US
+20171001@17:00:52 ==> Ign:121 http://archive.ubuntu.com/ubuntu xenial-updates/universe Translation-en
+20171001@17:00:52 ==> Ign:122 http://archive.ubuntu.com/ubuntu xenial-updates/multiverse amd64 Packages
+20171001@17:00:52 ==> Ign:123 http://archive.ubuntu.com/ubuntu xenial-updates/multiverse i386 Packages
+20171001@17:00:52 ==> Ign:78 http://archive.ubuntu.com/ubuntu xenial-updates/multiverse all Packages
+20171001@17:00:52 ==> Ign:79 http://archive.ubuntu.com/ubuntu xenial-updates/multiverse Translation-en_US
+20171001@17:00:52 ==> Ign:124 http://archive.ubuntu.com/ubuntu xenial-updates/multiverse Translation-en
+20171001@17:00:52 ==> Ign:125 http://archive.ubuntu.com/ubuntu xenial-backports/main amd64 Packages
+20171001@17:00:52 ==> Ign:126 http://archive.ubuntu.com/ubuntu xenial-backports/main i386 Packages
+20171001@17:00:52 ==> Ign:83 http://archive.ubuntu.com/ubuntu xenial-backports/main all Packages
+20171001@17:00:52 ==> Ign:84 http://archive.ubuntu.com/ubuntu xenial-backports/main Translation-en_US
+20171001@17:00:52 ==> Ign:127 http://archive.ubuntu.com/ubuntu xenial-backports/main Translation-en
+20171001@17:00:52 ==> Err:86 http://archive.ubuntu.com/ubuntu xenial-backports/restricted amd64 Packages
+20171001@17:00:52 ==> Connection failed [IP: 10.0.0.1 80]
+20171001@17:00:52 ==> Ign:87 http://archive.ubuntu.com/ubuntu xenial-backports/restricted i386 Packages
+20171001@17:00:52 ==> Ign:88 http://archive.ubuntu.com/ubuntu xenial-backports/restricted all Packages
+20171001@17:00:52 ==> Ign:89 http://archive.ubuntu.com/ubuntu xenial-backports/restricted Translation-en_US
+20171001@17:00:52 ==> Ign:90 http://archive.ubuntu.com/ubuntu xenial-backports/restricted Translation-en
+20171001@17:00:52 ==> Ign:128 http://archive.ubuntu.com/ubuntu xenial-backports/universe amd64 Packages
+20171001@17:00:52 ==> Ign:129 http://archive.ubuntu.com/ubuntu xenial-backports/universe i386 Packages
+20171001@17:00:52 ==> Ign:93 http://archive.ubuntu.com/ubuntu xenial-backports/universe all Packages
+20171001@17:00:52 ==> Ign:94 http://archive.ubuntu.com/ubuntu xenial-backports/universe Translation-en_US
+20171001@17:00:52 ==> Ign:130 http://archive.ubuntu.com/ubuntu xenial-backports/universe Translation-en
+20171001@17:00:52 ==> Ign:96 http://archive.ubuntu.com/ubuntu xenial-backports/multiverse amd64 Packages
+20171001@17:00:52 ==> Err:101 http://archive.ubuntu.com/ubuntu xenial/main amd64 Packages
+20171001@17:00:52 ==> Connection failed [IP: 10.0.0.1 80]
+20171001@17:00:52 ==> Ign:102 http://archive.ubuntu.com/ubuntu xenial/main i386 Packages
+20171001@17:00:52 ==> Ign:103 http://archive.ubuntu.com/ubuntu xenial/main Translation-en
+20171001@17:00:52 ==> Ign:104 http://archive.ubuntu.com/ubuntu xenial/restricted amd64 Packages
+20171001@17:00:52 ==> Ign:105 http://archive.ubuntu.com/ubuntu xenial/restricted i386 Packages
+20171001@17:00:52 ==> Ign:106 http://archive.ubuntu.com/ubuntu xenial/restricted Translation-en
+20171001@17:00:52 ==> Ign:107 http://archive.ubuntu.com/ubuntu xenial/universe amd64 Packages
+20171001@17:00:52 ==> Ign:108 http://archive.ubuntu.com/ubuntu xenial/universe i386 Packages
+20171001@17:00:52 ==> Ign:109 http://archive.ubuntu.com/ubuntu xenial/universe Translation-en
+20171001@17:00:52 ==> Ign:110 http://archive.ubuntu.com/ubuntu xenial/multiverse amd64 Packages
+20171001@17:00:52 ==> Ign:111 http://archive.ubuntu.com/ubuntu xenial/multiverse i386 Packages
+20171001@17:00:52 ==> Err:113 http://archive.ubuntu.com/ubuntu xenial-updates/main amd64 Packages
+20171001@17:00:52 ==> Connection failed [IP: 10.0.0.1 80]
+20171001@17:00:52 ==> Ign:114 http://archive.ubuntu.com/ubuntu xenial-updates/main i386 Packages
+20171001@17:00:52 ==> Ign:115 http://archive.ubuntu.com/ubuntu xenial-updates/main Translation-en
+20171001@17:00:52 ==> Ign:116 http://archive.ubuntu.com/ubuntu xenial-updates/restricted amd64 Packages
+20171001@17:00:52 ==> Ign:117 http://archive.ubuntu.com/ubuntu xenial-updates/restricted i386 Packages
+20171001@17:00:52 ==> Ign:118 http://archive.ubuntu.com/ubuntu xenial-updates/restricted Translation-en
+20171001@17:00:52 ==> Ign:119 http://archive.ubuntu.com/ubuntu xenial-updates/universe amd64 Packages
+20171001@17:00:52 ==> Ign:120 http://archive.ubuntu.com/ubuntu xenial-updates/universe i386 Packages
+20171001@17:00:52 ==> Ign:121 http://archive.ubuntu.com/ubuntu xenial-updates/universe Translation-en
+20171001@17:00:52 ==> Ign:122 http://archive.ubuntu.com/ubuntu xenial-updates/multiverse amd64 Packages
+20171001@17:00:52 ==> Ign:123 http://archive.ubuntu.com/ubuntu xenial-updates/multiverse i386 Packages
+20171001@17:00:52 ==> Reading package lists...
+20171001@17:00:52 ==> Reading package lists...
+20171001@17:00:53 ==> Building dependency tree...
+20171001@17:00:53 ==> Reading state information...
+20171001@17:00:53 ==> Calculating upgrade...
+20171001@17:00:53 ==> 0 upgraded, 0 newly installed, 0 to remove and 0 not upgraded.
+20171001@17:00:53 ==> Installing packages
+20171001@17:00:53 ==> Reading package lists...
+20171001@17:00:53 ==> Building dependency tree...
+20171001@17:00:53 ==> Reading state information...
+20171001@17:00:54 ==> git is already the newest version (1:2.7.4-0ubuntu1.2).
+20171001@17:00:54 ==> The following NEW packages will be installed:
+20171001@17:00:54 ==> libuv1 nodejs
+20171001@17:00:54 ==> 0 upgraded, 2 newly installed, 0 to remove and 0 not upgraded.
+20171001@17:00:54 ==> Need to get 3,218 kB of archives.
+20171001@17:00:54 ==> After this operation, 13.4 MB of additional disk space will be used.
+20171001@17:00:54 ==> Err:1 http://archive.ubuntu.com/ubuntu xenial/universe amd64 libuv1 amd64 1.8.0-1
+20171001@17:00:54 ==> Connection failed [IP: 10.0.0.1 80]
+20171001@17:00:54 ==> Err:2 http://archive.ubuntu.com/ubuntu xenial-updates/universe amd64 nodejs amd64 4.2.6~dfsg-1ubuntu4.1
+20171001@17:00:54 ==> Connection failed [IP: 10.0.0.1 80]

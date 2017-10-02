@@ -13,6 +13,10 @@
 
 class String
 	
+	# Description::	Use this method to test whether, or not, a string can be cast to an integer
+	# Parameters::	
+	#	(string) self: a string that may or may not be able to be cast to an integer
+	# Return Type::	Ruby.Boolean
 	def is_i?
 		/\A[-+]?\d+\z/ === self
 	end
