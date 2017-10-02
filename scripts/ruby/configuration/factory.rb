@@ -46,7 +46,7 @@ class ConfigurationFactory
 				raise "Configurations did not pass validation."
 			end
 
-		end # end def BuildConfig
+		end # End def BuildConfig
 		
 		# Description::	Static method, called on the factory to build a configuration repository,
 		#				after loading, deserializing, validating, merging, & building a complete 
@@ -60,7 +60,7 @@ class ConfigurationFactory
 		# Return Type::	Configuration Repository
 		def BuildConfigRepo(defaultFilePath, overrideFilePath)
 			return ConfigurationRepository.new(self.BuildConfig(defaultFilePath, overrideFilePath))
-		end # end def BuildConfigRepo
+		end # End def BuildConfigRepo
 
 		# Description::	Used to load & deserialize the default & override JSON configuration files
 		# Parameters::	
@@ -73,27 +73,27 @@ class ConfigurationFactory
 		
 			# Check if the default JSON configuration document exists, 
 			if File.exists?(File.expand_path(defaultFilePath))
-				# & if it does, read & deserialize it into the configs hash
+				# If it does, read & deserialize it into the configs hash
 				configs[Configuration::DEFAULTS_KEY] = JSON.parse(File.read(File.expand_path(defaultFilePath)))
 			else
 				# Else, throw an error
 				raise "Default Configuration file not found."
-			end 
-			# end load & deserialization of defaults JSON configuration document
+			end # End if File.exists
+			# End load & deserialization of defaults JSON configuration document
 			
 			# Check if the overrides JSON configuration document exists, 
 			if File.exists?(File.expand_path(overrideFilePath))
-				# & if it does, read & deserialize it into the configs hash
+				# If it does, read & deserialize it into the configs hash
 				configs[Configuration::OVERRIDES_KEY] = JSON.parse(File.read(File.expand_path(overrideFilePath)))
 			else
 				# Else, throw an error
 				raise "Override Configuration file not found."
-			end 
-			# end load & deserialization of overrides JSON configuration document
+			end # End if File.exists
+			# End load & deserialization of overrides JSON configuration document
 		
 			return configs
 		
-		end # end private def loadConfigurationFiles
+		end # End private def loadConfigurationFiles
 
 		# Description::	Used to validate the JSON found in the default & override configuration files
 		# Parameters::	
@@ -105,18 +105,18 @@ class ConfigurationFactory
 			# Validate the defaults configuration collection
 			if !ConfigurationValidator::ValidateConfiguration(deserializedConfigs[Configuration::DEFAULTS_KEY])
 				raise "Default Configuration file is not valid."
-			end 
-			# end the validation of the defaults configuration collection
+			end # End if config is valid
+			# End the validation of the defaults configuration collection
 			
 			# Validate the overrides configuration collection
 			if !ConfigurationValidator::ValidateConfiguration(deserializedConfigs[Configuration::OVERRIDES_KEY])
 				raise "Override Configuration file is not valid."
-			end 
-			# end the validation of the overrides configuration collection
+			end # End if config is valid 
+			# End the validation of the overrides configuration collection
 
 			return true
 
-		end # end private def validateConfigurationFiles
+		end # End private def validateConfigurationFiles
 		
 		# Description::	Used to merge the results from deserialization of the default & override configuration files
 		# Parameters::	
@@ -126,26 +126,26 @@ class ConfigurationFactory
 			
 			merged = {}
 		
-			# Merge the default & override vagrant configurations
+			# Begin merging the default & override vagrant configurations
 			merged[Configuration::VAGRANT_KEY] = deserializedConfigs[Configuration::DEFAULTS_KEY][Configuration::VAGRANT_KEY]
 
 			if !deserializedConfigs[Configuration::OVERRIDES_KEY][Configuration::VAGRANT_KEY].nil?
 				merged[Configuration::VAGRANT_KEY] = merged[Configuration::VAGRANT_KEY].mergeCollections(deserializedConfigs[Configuration::OVERRIDES_KEY][Configuration::VAGRANT_KEY])
 			end 
-			# end merging of the default & override vagrant configurations
+			# End merging the default & override vagrant configurations
 		
-			# Merge the default & override server configurations
+			# Begin merging the default & override server configurations
 			merged[Configuration::SERVERS_KEY] = []
 
 			# Loop through each server definition in the override configuration collection
 			deserializedConfigs[Configuration::OVERRIDES_KEY][Configuration::SERVERS_KEY].each do |server|
 				merged[Configuration::SERVERS_KEY].push(deserializedConfigs[Configuration::DEFAULTS_KEY][Configuration::SERVERS_KEY].mergeCollections(server))
-			end # end server.each
-			# end merging of the default & override server configurations
+			end # End server.each
+			# End merging the default & override server configurations
 
 			return merged
 
-		end # end private def mergeConfigurations
+		end # End private def mergeConfigurations
 		
 		# Description::	Used to new-up a Configuration object using a flag indicating whether the
 		#				configuration files were found to be valid, the deserialized configuration 
@@ -157,8 +157,8 @@ class ConfigurationFactory
 		# Return Type::	Configuration model
 		private def buildConfiguration(areConfigsValid, deserializedConfigs, mergedConfigs)
 			return Configuration.new(areConfigsValid, deserializedConfigs, mergedConfigs)
-		end # end private def buildConfiguration
+		end # End private def buildConfiguration
 	
-	end # end class << self
+	end # End class << self
 
-end # end class ConfigurationFactory
+end # End class ConfigurationFactory

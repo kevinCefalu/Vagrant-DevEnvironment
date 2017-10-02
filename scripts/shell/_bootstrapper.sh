@@ -1,6 +1,17 @@
 
 #!/bin/bash
-# Provisioner Bootstrapping Script
+
+####################################################################################################
+# Title::		Provisioner Bootstrap: Shell Provisioner Bootstrapping script
+# Author::		Kevin Cefalu  (mailto:kevin.cefalu@gmail.com)
+# CreatedOn::	2017-09-25
+# Description::	A provisioner bootstrap script to run all provisioning bash shell scripts
+####################################################################################################
+# Changelog::
+# Date			By				Description
+#--------------|---------------|---------------------------------------------------------------------
+# 2017-09-25	KCefalu			Initial creation of Bootstrapper & documentation
+####################################################################################################
 
 cat << "EOA"
 =============================================================================

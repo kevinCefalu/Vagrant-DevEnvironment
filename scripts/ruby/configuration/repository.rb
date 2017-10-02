@@ -24,49 +24,49 @@ class ConfigurationRepository
 	# 	(Configuration) model: A properly defined Configuration model
 	def initialize(model)
 		@model = model
-	end # end def initialize (constructor)
+	end # End def initialize (constructor)
 
 	# Description::	Getter for the configuration object
 	# Return Type::	Ruby.Hash
 	def ConfigurationModel 
 		@model 
-	end # end public def ConfigurationModel
+	end # End public def ConfigurationModel
 
 	# Description::	Getter for the configuration validity flag
 	# Return Type::	Ruby.Hash
 	def ConfigsAreValid 
 		@model.ConfigsAreValid 
-	end # end public def ConfigsAreValid
+	end # End public def ConfigsAreValid
 	
 	# Description::	Getter for the defaults configurations hash
 	# Return Type::	Ruby.Hash
 	def DefaultConfigs 
 		@model.DefaultConfigs 
-	end # end public def DefaultConfigs
+	end # End public def DefaultConfigs
 	
 	# Description::	Getter for the overrides configurations hash
 	# Return Type::	Ruby.Hash
 	def OverrideConfigs 
 		@model.OverrideConfigs 
-	end # end public def OverrideConfigs
+	end # End public def OverrideConfigs
 	
 	# Description::	Getter for the merged configurations hash
 	# Return Type::	Ruby.Hash
 	def MergedConfigs 
 		@model.MergedConfigs 
-	end # end public def MergedConfigs
+	end # End public def MergedConfigs
 
 	# Description::	Getter for the Vagrant configuration hash 
 	# Return Type::	Ruby.Hash
 	def ForVagrant 
 		@model.ForVagrant 
-	end # end public def ForVagrant
+	end # End public def ForVagrant
 	
 	# Description::	Getter for the server definition array
 	# Return Type::	Ruby.Array
 	def ForServers 
 		@model.ForServers 
-	end # end public def ForServers
+	end # End public def ForServers
 
 	# Description::	Public method used to query the merged configuration hash by providing a 
 	#				string representation of the path needed to traverse to the target property
@@ -78,7 +78,7 @@ class ConfigurationRepository
 	# Return Type::	depends on the value found at the path (but likely serialized to Ruby.String)
 	def GetValueFrom(collection, jsonPath)
 		return Collection::GetValueFromPath(collection, jsonPath)
-	end # end public def GetValue
+	end # End public def GetValue
 
 	# Description::	Public method used to query the merged configuration hash by providing a 
 	#				string representation of the path needed to traverse to the target property
@@ -89,7 +89,7 @@ class ConfigurationRepository
 	# Return Type::	depends on the value found at the path (but likely serialized to Ruby.String)
 	def GetValue(jsonPath)
 		return Collection::GetValueFromPath(@model.MergedConfigs, jsonPath)
-	end # end public def GetValue
+	end # End public def GetValue
 
 	# Description::	Public method used to return the value of the current provision script argument, 
 	# 				or query the merged configuration collection for the argument value
@@ -107,23 +107,24 @@ class ConfigurationRepository
 		else 
 			# Else, the value is stored in the argument instance
 			return argInstance["value"]
-		end # end if
+		end # End if
 
-	end # end def GetScriptArgument
+	end # End def GetScriptArgument
 
 	# Description::	Used to log all configuration versions (i.e., deserialized default 
 	# 				and override configs, as well as the merged result of those files)
 	def LogConfigurations()
 
-		# Build a composite hash, 
+		# Begin building a composite hash 
 		configHash = {}
 		configHash[Configuration::DEFAULTS_KEY] = @model.DefaultConfigs
 		configHash[Configuration::OVERRIDES_KEY] = @model.OverrideConfigs
 		configHash[Configuration::MERGED_KEY] = @model.MergedConfigs
+		# End builing a composite hash
 
 		# And log it to the console in JSONP format
 		Logger.LogToConsole(configHash, true);
 
-	end # end public def logConfiguration
+	end # End public def logConfiguration
 
-end # end class ConfigurationRepository
+end # End class ConfigurationRepository

@@ -23,12 +23,15 @@ class Logger
 	#						should be formatted as such.
 	def self.LogToConsole(object, isJSON)
 
-		if isJSON # Is this object a JSON collection, then use JSON.pretty_generate
+		# Check if this object a JSON collection 
+		if isJSON 
+			# If so, then use JSON.pretty_generate to format the output
 			puts JSON.pretty_generate(object)
-		else # Else just print the object to the console
+		else 
+			# Else, just print the object to the console, normally
 			puts object
-		end # end if isJSON
+		end # End if isJSON
 
-	end # end def logToConsole
+	end # End def logToConsole
 
-end # end class Logger
+end # End class Logger

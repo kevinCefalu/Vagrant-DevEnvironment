@@ -19,6 +19,6 @@ class String
 	# Return Type::	Ruby.Boolean
 	def is_i?
 		/\A[-+]?\d+\z/ === self
-	end
+	end # End def is_i?
 
-end
+end # End class String

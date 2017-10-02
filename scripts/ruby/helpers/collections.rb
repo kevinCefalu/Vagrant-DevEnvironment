@@ -33,13 +33,13 @@ class Hash
 			else
 				# Else, if the override value exists, take it, otherwise use the global value
 				override_value.nil? ? global_value : override_value
-			end # end if global_value.is_a?([Hash|Array])
+			end # End if global_value.is_a?([Hash|Array])
 
-		end # end self.merge
+		end # End self.merge
 
-	end # end def mergeCollections
+	end # End def mergeCollections
 	
-end # end class Hash
+end # End class Hash
 
 class Collection
 	
@@ -62,15 +62,15 @@ class Collection
 			# Check if the collection should go any deeper.
 			if pathArray.length > 0
 				# if so, recurse deeper into the target node, in the current node
-				return collectionLogicBranch(collection, currentKey, pathArray, 
-					Proc.new { |collection, key, pathArray| return self.GetValueFromPath(collection[key], pathArray.join('/')) })
+				return collectionLogicBranch(collection, currentKey, pathArray, Proc.new { 
+					|collection, key, pathArray| return self.GetValueFromPath(collection[key], pathArray.join('/')) })
 			else
 				# if not, return the target leaf's value, in the current node
-				return collectionLogicBranch(collection, currentKey, pathArray, 
-					Proc.new { |collection, key, pathArray| return collection[key] })
-			end # end if pathArray.length check
+				return collectionLogicBranch(collection, currentKey, pathArray, Proc.new { 
+					|collection, key, pathArray| return collection[key] })
+			end # End if pathArray.length check
 
-		end # end def GetValueFromPath
+		end # End def GetValueFromPath
 
 		# Description::	Private method used to abstract out branching logic that was duplicated.
 		#				Checks if the collection parameter is a hash or an array, and then calls 
@@ -88,17 +88,18 @@ class Collection
 				# If it's a hash, pass the parameters into the command proc
 				return commandProc.call(collection, currentKey, pathArray)
 			elsif collection.is_a?(Array)
-				# If it's a hash, check if the currentKey parameter is an integer,
+				# If it's an array, check if the currentKey parameter is an integer
 				# If it is, convert the key to an integer, & then pass the parameters into the command proc
 				return commandProc.call(collection, currentKey.to_i, pathArray) if currentKey.is_i?
+				# Else, throw an error
 				raise "Invalid arrray index: couldnt convert string to integer (index)."
 			else
 				# Something bad has happened. It's likely that your path was malformed, or incorrect.
 				raise "Invalid collection."
-			end
+			end # End if
 	
-		end # end def collectionCheckBranch
+		end # End def collectionCheckBranch
 
-	end # end class << self
+	end # End class << self
 
-end # end class Collection
+end # End class Collection
