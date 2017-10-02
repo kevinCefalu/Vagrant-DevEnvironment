@@ -3,92 +3,111 @@
 # vi: set ft=ruby :
 
 require_relative "scripts/ruby/configuration/model.rb"
-require_relative "scripts/ruby/helpers/configuration.rb"
+require_relative "scripts/ruby/configuration/factory.rb"
+require_relative "scripts/ruby/configuration/repository.rb"
+require_relative "scripts/ruby/helpers/collections.rb"
 require_relative "scripts/ruby/helpers/logger.rb"
 
-defaultConfigFile = "./configs/vagrant/config.defaults.json"
-configOverridesFile = "./configs/vagrant/config.json"
+defaultsFilePath = "./configs/vagrant/config.defaults.json"
+overridesFilePath = "./configs/vagrant/config.json"
 
-configRepo = ConfigurationRepository.new(defaultConfigFile, configOverridesFile)
-configuration = configRepo.WorkingConfig
-# configRepo.logConfiguration()
+# Build Merged Configuration Repository
+configRepo = ConfigurationFactory::BuildConfigRepo(defaultsFilePath, overridesFilePath)
+# Log Configuration collection to the console
+# configRepo.LogConfigurations() 
 
-Vagrant.configure(configuration.ForVagrant['version']) do |config|
+Vagrant.configure(configRepo.ForVagrant['version']) do |v_config|
 
-	config.ssh.insert_key = configuration.ForVagrant["ssh"]['enable_custom_ssh_key']
+	v_config.ssh.insert_key = configRepo.GetValue("vagrant/ssh/enable_custom")
 
 	# Configuration Loop for each server defined in Merged Configuration
-	configuration.ForServers.each do |server_instance|
+	configRepo.ForServers.each do |svr_inst|
 
-		# Configure Virtual Machine Definition
-		config.vm.define server_instance["hostname"] do |server_definition|
+		if svr_inst["enabled"]
 
-			# Configure Virtual Machine Box image definition
-			server_definition.vm.hostname = server_instance["hostname"]
-			server_definition.vm.box = server_instance['vm']["image"]["name"]
-			server_definition.vm.box_check_update = server_instance['vm']["image"]['check_for_update']
-			# end Configuration of Virtual Machine Box image definition
+			hostName = svr_inst["hostname"]
 
-			# Configure Virtual Machine Network definition
-			server_definition.vm.network server_instance['hardware']['nic']['network_type'], 
-				ip: server_instance['hardware']['nic']['ip_address']
+			# Begin configuring the virtual machine Definition
+			v_config.vm.define hostName do |svr_def|
 
-			# Configure Virtual Machine Network Port Forward definitions
-			server_instance['hardware']['nic']['port_fwds'].each do |port_forward_instance|
-				server_definition.vm.network :forwarded_port, 
-					id: port_forward_instance["id"], 
-					auto_correct: port_forward_instance["auto_correct"], 
-					guest: port_forward_instance["ports"]["guest"], 
-					host: port_forward_instance["ports"]["host"] 
-			end # forwarded_ports.each
-			# end Configuration of Virtual Machine Network Port Forward definitions
+				# Begin configuring the virtual machine's box image definition
+				svr_def.vm.hostname = hostName
+				svr_def.vm.box = configRepo.GetValueFrom(svr_inst, "vm/image/name")
+				svr_def.vm.box_check_update = configRepo.GetValueFrom(svr_inst, "vm/image/check_for_update")
+				# End configuring the virtual machine's box image definition
 
-			# end Configuration of Virtual Machine Network definition
+				# Begin configuring the virtual machine's network definition
+				svr_def.vm.network configRepo.GetValueFrom(svr_inst, "hardware/nic/_type"), 
+					ip: configRepo.GetValueFrom(svr_inst, "hardware/nic/ip")
 
-			# Configure Virtual Machine VirtualBox Provider
-			server_definition.vm.provider :virtualbox do |virtualbox_definition|
-				virtualbox_definition.name = server_instance["hostname"]
-				virtualbox_definition.cpus = server_instance['hardware']["cpu_count"]
-				virtualbox_definition.memory = server_instance['hardware']["ram_total"]
-				virtualbox_definition.customize ["modifyvm", :id, "--cableconnected1", "on"]
-			end # end config.vm.provider
-			# end Configuration of Virtual Machine VirtualBox Provider
+				# Begin configuring the virtual machine's port forward definitions
+				configRepo.GetValueFrom(svr_inst, "hardware/nic/port_fwds").each do |pf_inst|
+					
+					svr_def.vm.network :forwarded_port, 
+						id: configRepo.GetValueFrom(pf_inst, "id"), 
+						auto_correct: configRepo.GetValueFrom(pf_inst, "auto_correct"), 
+						guest: configRepo.GetValueFrom(pf_inst, "ports/guest"), 
+						host: configRepo.GetValueFrom(pf_inst, "ports/host") 
 
-			# Configure Virtual Machine Folder Syncs
-			server_instance['fs_syncs'].each do |fs_sync_instance|
-				server_definition.vm.synced_folder fs_sync_instance['paths']['host'], fs_sync_instance['paths']['guest'], 
-					disabled: !fs_sync_instance['enabled'] 
-			end # server_instance['fs_sync'].each
-			# end Configuration of Virtual Machine Folder Syncs
+				end # End forwarded_ports.each
+				# End configuring the virtual machine's port forward definitions
+				# End configuring the virtual machine's network definition
 
-			# Configure Virtual Machine Provisioner Scripts
-			server_instance["scripts"].each do |script_instance|
-				server_definition.vm.provision script_instance["_type"] do |script_definition|
-					script_definition.name = script_instance["name"]
-					script_definition.path = script_instance["path"]
-					if script_instance["args"] != nil && script_instance["args"].length > 0
+				# Begin configuring the virtual machine's virtualBox provider
+				svr_def.vm.provider :virtualbox do |vb_def|
+
+					vb_def.name = hostName
+					vb_def.cpus = configRepo.GetValueFrom(svr_inst, "hardware/cpu_count")
+					vb_def.memory = configRepo.GetValueFrom(svr_inst, "hardware/ram_total")
+					# Important to fix an issue with ubuntu 16.x's SSH connection
+					vb_def.customize ["modifyvm", :id, "--cableconnected1", "on"]
+
+				end # End vb_def
+				# End configuring the virtual machine's virtualBox provider
+
+				# Begin configuring the virtual machine Folder Syncs
+				configRepo.GetValueFrom(svr_inst, "fs_syncs").each do |fs_inst|
+
+					svr_def.vm.synced_folder configRepo.GetValueFrom(fs_inst, "paths/host"), configRepo.GetValueFrom(fs_inst, "paths/guest"), 
+						disabled: !configRepo.GetValueFrom(fs_inst, "enabled") 
+
+				end # fs_inst.each
+				# End configuring the virtual machine's folder syncs
+
+				# Begin configuring the virtual machine's provisioner scripts
+				configRepo.GetValueFrom(svr_inst, "scripts").each do |scr_inst|
+					svr_def.vm.provision configRepo.GetValueFrom(scr_inst, "_type") do |script_definition|
+
+						script_definition.name = configRepo.GetValueFrom(scr_inst, "name")
+						script_definition.path = configRepo.GetValueFrom(scr_inst, "path")
 						script_definition.args = []
-					end
-					script_instance["args"].each do |argument_instance|
-						if argument_instance["_type"] === "json_path"
-							script_definition.args.push(configRepo(argument_instance["path"]))
-						else
-							script_definition.args.push(argument_instance["value"])
-						end # end if argument_instance["_type"]
-					end # end script_instance["args"].each
-				end # end server_definition.vm.provision :shell
-			end # end server_definition["scripts"].each
 
-			server_definition.vm.provision :docker
-			server_definition.vm.provision :docker_compose,
-				run: "always", 
-				yml: "/configs/docker/docker-compose.yml"
-			# end Configuration of Virtual Machine Provisioner Scripts
+						# Build the script definition's array of arguments
+						configRepo.GetValueFrom(scr_inst, "args").each do |arg_inst|
+							script_definition.args.push(configRepo.GetScriptArgument(arg_inst))
+						end # End arg_inst.each
 
-		end # end config.vm.define
-		# end Configuration of Virtual Machine Definition
+					end # End script_definition
+				end # End scr_inst.each
+				
+				# Begin configuring the virtual machine for docker & docker-compose 
+				if configRepo.GetValueFrom(svr_inst, "docker/enabled")
+					
+					svr_def.vm.provision :docker
+					svr_def.vm.provision :docker_compose,
+						run: configRepo.GetValueFrom(svr_inst, "docker/run"), 
+						yml: configRepo.GetValueFrom(svr_inst, "docker/compose_file")
+					
+				end # End if docker is enabled
+				# End configuring the virtual machine for docker & docker-compose
+				# End configuring the virtual machine provisioner scripts
 
-	end # end configuration.ForServers.each
-	# end Configuration Loop for each server defined in Merged Configuration
+			end # End svr_def
+			# End configuring the virtual machine definition
+		
+		end # End if srv_inst is enabled
 
-end # end Vagrant.configure
+	end # End svr_inst.each
+	# End the configuration loop for each server defined in the merged configuration
+
+end # End v_config
